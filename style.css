@@ -1,0 +1,13 @@
+:root {
+    --gray: #eaebf3;
+}
+
+body {
+    background: var(--gray);
+}
+
+.neumorphism {
+    box-shadow: 9px 9px 16px rgb(163 177 198 / 60%),
+        -9px -9px 16px rgb(255 255 255 / 50%);
+    background-color: var(--gray);
+}
