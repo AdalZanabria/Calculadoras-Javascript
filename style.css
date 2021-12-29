@@ -3,11 +3,47 @@
 }
 
 body {
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+.container {
     background: var(--gray);
+    box-shadow: 9px 9px 16px rgb(0 0 0 / 50%);
 }
 
 .neumorphism {
     box-shadow: 9px 9px 16px rgb(163 177 198 / 60%),
         -9px -9px 16px rgb(255 255 255 / 50%);
     background-color: var(--gray);
+}
+
+.card {
+    border: none;
+}
+
+.card-title {
+    margin-bottom: 0;
+}
+
+.icon-container{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--gray);
+    box-shadow: 9px 9px 16px rgb(163 177 198 / 60%),
+        -9px -9px 16px rgb(255 255 255 / 50%);
+    border-radius: 50%;
+}
+
+.bi-triangle {
+    color: #20c997;
+}
+
+.bi-square {
+    color: #d63384;
+}
+
+.bi-circle {
+    color: #dc3545;
 }
