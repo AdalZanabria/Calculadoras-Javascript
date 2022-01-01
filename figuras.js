@@ -27,7 +27,7 @@ function perimetroCirculo(radio) {
 }
 
 function areaCirculo(radio) {
-    return (radio * radio) * Math.PI;
+    return radio * radio * Math.PI;
 }
 
 // Interacción con HTML
@@ -38,7 +38,7 @@ function calcularPerimetroCuadrado() {
     const value = input.value;
 
     const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+    return perimetro;
 }
 
 function calcularAreaCuadrado() {
@@ -46,7 +46,7 @@ function calcularAreaCuadrado() {
     const value = input.value;
 
     const area = areaCuadrado(value);
-    alert(area);
+    return area;
 }
 
 // Triángulo
@@ -61,7 +61,7 @@ function calcularPerimetroTriangulo() {
     const valorBase = Number(base.value);
 
     const perimetro = perimetroTriangulo(valor1, valor2, valorBase);
-    alert(perimetro);
+    return perimetro;
 }
 
 function calcularAreaTriangulo() {
@@ -72,7 +72,7 @@ function calcularAreaTriangulo() {
     const valorAltura = Number(altura.value);
 
     const area = areaTriangulo(valorBase, valorAltura);
-    alert(area);
+    return area;
 }
 
 // Circulo
@@ -81,8 +81,7 @@ function calcularPerimetroCirculo() {
     const valorRadio = Number(radio.value);
 
     const perimetro = perimetroCirculo(valorRadio);
-    alert(perimetro);
-
+    return perimetro;
 }
 
 function calcularAreaCirculo() {
@@ -90,5 +89,53 @@ function calcularAreaCirculo() {
     const valorRadio = Number(radio.value);
 
     const area = areaCirculo(valorRadio);
-    alert(area);
+    return area;
+    //var modal = document.getElementById('ventanaModal').querySelector('.modal-body')
+}
+
+// Modal
+var ventanaModal = document.getElementById("ventanaModal");
+ventanaModal.addEventListener("show.bs.modal", function (event) {
+    // Button that triggered the modal
+    var button = event.relatedTarget;
+    // Extract info from data-bs-* attributes
+    var calculo = button.getAttribute("data-bs-calculo");
+    var figura = button.getAttribute("data-bs-figura");
+    var operacion = calculo + figura;
+
+    switch (operacion) {
+        case "perimetrotriangulo":
+            var resultado = calcularPerimetroTriangulo();
+            break;
+        case "areatriangulo":
+            var resultado = calcularAreaTriangulo();
+            break;
+        case "perimetrocuadrado":
+            var resultado = calcularPerimetroCuadrado();
+            break;
+        case "areacuadrado":
+            var resultado = calcularAreaCuadrado();
+            break;
+        case "perimetrocirculo":
+            var resultado = calcularPerimetroCirculo();
+            break;
+        case "areacirculo":
+            var resultado = calcularAreaCirculo();
+            break;
+        default:
+            var resultado = "No se encontró caso.";
+    }
+
+    // Update the modal's content.
+    var modalTitle = ventanaModal.querySelector(".modal-title");
+    var modalBody = ventanaModal.querySelector(".modal-body");
+
+    modalTitle.textContent = mayuscula(calculo) + " del " + figura;
+    modalBody.textContent =
+        "El " + calculo + " del " + figura + " es igual a: " + resultado;
+});
+
+// Primera letra en mayúscula
+function mayuscula(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
 }

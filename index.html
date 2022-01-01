@@ -113,15 +113,21 @@
                                     <div class="d-flex justify-content-evenly">
                                         <button
                                             type="button"
-                                            onclick="calcularPerimetroTriangulo()"
                                             class="btn btn-outline-primary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#ventanaModal"
+                                            data-bs-calculo="perimetro"
+                                            data-bs-figura="triangulo"
                                         >
                                             Calcular perímetro
                                         </button>
                                         <button
                                             type="button"
-                                            onclick="calcularAreaTriangulo()"
                                             class="btn btn-outline-primary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#ventanaModal"
+                                            data-bs-calculo="area"
+                                            data-bs-figura="triangulo"
                                         >
                                             Calcular área
                                         </button>
@@ -166,15 +172,21 @@
                                     <div class="d-flex justify-content-evenly">
                                         <button
                                             type="button"
-                                            onclick="calcularPerimetroCuadrado()"
                                             class="btn btn-outline-primary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#ventanaModal"
+                                            data-bs-calculo="perimetro"
+                                            data-bs-figura="cuadrado"
                                         >
                                             Calcular perímetro
                                         </button>
                                         <button
                                             type="button"
                                             class="btn btn-outline-primary"
-                                            onclick="calcularAreaCuadrado()"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#ventanaModal"
+                                            data-bs-calculo="area"
+                                            data-bs-figura="cuadrado"
                                         >
                                             Calcular área
                                         </button>
@@ -220,15 +232,21 @@
                                     <div class="d-flex justify-content-evenly">
                                         <button
                                             type="button"
-                                            onclick="calcularPerimetroCirculo()"
                                             class="btn btn-outline-primary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#ventanaModal"
+                                            data-bs-calculo="perimetro"
+                                            data-bs-figura="circulo"
                                         >
                                             Calcular perímetro
                                         </button>
                                         <button
                                             type="button"
-                                            onclick="calcularAreaCirculo()"
                                             class="btn btn-outline-primary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#ventanaModal"
+                                            data-bs-calculo="area"
+                                            data-bs-figura="circulo"
                                         >
                                             Calcular área
                                         </button>
@@ -238,6 +256,41 @@
                         </div>
                     </div>
                 </section>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="ventanaModal"
+            tabindex="-1"
+            aria-labelledby="ventanaModal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ventanaModalLabel">
+                            Modal title
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">...</div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                        >
+                            Volver
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
 
