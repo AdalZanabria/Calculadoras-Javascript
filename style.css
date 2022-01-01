@@ -24,9 +24,9 @@ body {
     margin-bottom: 0;
 }
 
-.icon-container{
-    width: 4rem;
-    height: 4rem;
+.icon-container {
+    width: 4.5rem;
+    height: 4.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
