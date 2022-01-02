@@ -17,225 +17,248 @@
         <link rel="stylesheet" href="style.css" />
         <title>Calculadora Geométrica</title>
     </head>
-    <body class="d-flex flex-column">
-        <!--Main-->
-        <main class="container mx-sm-auto my-4 p-4 rounded">
-            <header class="row">
-                <h1>Calculadora Geométrica</h1>
-                <p>Práctica de JavaScript.</p>
-            </header>
+    <body class="d-flex flex-column h-100">
+        <div class="container-fluid p-3">
+            <!--Main-->
+            <main class="container mx-sm-auto my-4 p-4 rounded">
+                <header class="row">
+                    <h1>Calculadora Geométrica</h1>
+                    <p>Práctica de JavaScript.</p>
+                </header>
 
-            <section class="row mt-1 px-auto">
-                <!--Triángulo-->
-                <div class="col-sm-12 col-md-6 col-lg-4 mt-5">
-                    <div class="card neumorphism">
-                        <div class="card-body">
-                            <div class="icon-container mx-auto">
-                                <i class="bi bi-triangle display-6"></i>
-                            </div>
-                            <h2 class="card-title my-4 display-6 text-center">
-                                Triángulo
-                            </h2>
-
-                            <form>
-                                <div
+                <section class="row mt-1 px-auto">
+                    <!--Triángulo-->
+                    <div class="col-sm-12 col-md-6 col-lg-4 mt-5">
+                        <div class="card neumorphism">
+                            <div class="card-body">
+                                <div class="icon-container mx-auto">
+                                    <i class="bi bi-triangle display-6"></i>
+                                </div>
+                                <h2
                                     class="
-                                        d-flex
-                                        flex-column
-                                        justify-content-between
+                                        card-title
+                                        my-4
+                                        display-6
+                                        text-center
                                     "
                                 >
-                                    <div class="form-floating mb-3">
-                                        <input
-                                            type="number"
-                                            class="form-control"
-                                            id="InputTriangulo1"
-                                            placeholder="5"
-                                        />
-                                        <label
-                                            for="InputTriangulo1"
-                                            class="floatingInput"
-                                        >
-                                            Medida del lado 1:
-                                        </label>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input
-                                            type="number"
-                                            class="form-control"
-                                            id="InputTriangulo2"
-                                            placeholder="5"
-                                        />
-                                        <label
-                                            for="InputTriangulo2"
-                                            class="floatingInput"
-                                        >
-                                            Medida del lado 2:
-                                        </label>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input
-                                            type="number"
-                                            class="form-control"
-                                            id="InputTriangulo3"
-                                            placeholder="5"
-                                        />
-                                        <label
-                                            for="InputTriangulo3"
-                                            class="floatingInput"
-                                        >
-                                            Medida de la base:
-                                        </label>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input
-                                            type="number"
-                                            class="form-control"
-                                            id="InputTriangulo4"
-                                            placeholder="5"
-                                        />
-                                        <label
-                                            for="InputTriangulo4"
-                                            class="floatingInput"
-                                        >
-                                            Medida de la altura:
-                                        </label>
-                                    </div>
-                                </div>
+                                    Triángulo
+                                </h2>
 
-                                <div class="d-flex justify-content-evenly">
-                                    <button
-                                        type="button"
-                                        class="btn btn-outline-primary"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#ventanaModal"
-                                        data-bs-calculo="perimetro"
-                                        data-bs-figura="triangulo"
+                                <form>
+                                    <div
+                                        class="
+                                            d-flex
+                                            flex-column
+                                            justify-content-between
+                                        "
                                     >
-                                        Calcular perímetro
-                                    </button>
-                                    <button
-                                        type="button"
-                                        class="btn btn-outline-primary"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#ventanaModal"
-                                        data-bs-calculo="area"
-                                        data-bs-figura="triangulo"
-                                    >
-                                        Calcular área
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <!--Cuadrado-->
-                <div class="col-sm-12 col-md-6 col-lg-4 mt-5">
-                    <div class="card neumorphism">
-                        <div class="card-body">
-                            <div class="icon-container mx-auto">
-                                <i class="bi bi-square display-6"></i>
+                                        <div class="form-floating mb-3">
+                                            <input
+                                                type="number"
+                                                class="form-control"
+                                                id="InputTriangulo1"
+                                                placeholder="5"
+                                            />
+                                            <label
+                                                for="InputTriangulo1"
+                                                class="floatingInput"
+                                            >
+                                                Medida del lado 1:
+                                            </label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input
+                                                type="number"
+                                                class="form-control"
+                                                id="InputTriangulo2"
+                                                placeholder="5"
+                                            />
+                                            <label
+                                                for="InputTriangulo2"
+                                                class="floatingInput"
+                                            >
+                                                Medida del lado 2:
+                                            </label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input
+                                                type="number"
+                                                class="form-control"
+                                                id="InputTriangulo3"
+                                                placeholder="5"
+                                            />
+                                            <label
+                                                for="InputTriangulo3"
+                                                class="floatingInput"
+                                            >
+                                                Medida de la base:
+                                            </label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input
+                                                type="number"
+                                                class="form-control"
+                                                id="InputTriangulo4"
+                                                placeholder="5"
+                                            />
+                                            <label
+                                                for="InputTriangulo4"
+                                                class="floatingInput"
+                                            >
+                                                Medida de la altura:
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-evenly">
+                                        <button
+                                            type="button"
+                                            class="btn btn-outline-primary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#ventanaModal"
+                                            data-bs-calculo="perimetro"
+                                            data-bs-figura="triangulo"
+                                        >
+                                            Calcular perímetro
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-outline-primary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#ventanaModal"
+                                            data-bs-calculo="area"
+                                            data-bs-figura="triangulo"
+                                        >
+                                            Calcular área
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
-                            <h2 class="card-title my-4 display-6 text-center">
-                                Cuadrado
-                            </h2>
-                            <form>
-                                <div class="form-floating mb-3">
-                                    <input
-                                        type="number"
-                                        class="form-control"
-                                        id="InputCuadrado"
-                                        placeholder="5"
-                                    />
-                                    <label
-                                        for="InputCuadrado"
-                                        class="floatingInput"
-                                    >
-                                        Medida de los lados:
-                                    </label>
-                                </div>
-
-                                <div class="d-flex justify-content-evenly">
-                                    <button
-                                        type="button"
-                                        class="btn btn-outline-primary"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#ventanaModal"
-                                        data-bs-calculo="perimetro"
-                                        data-bs-figura="cuadrado"
-                                    >
-                                        Calcular perímetro
-                                    </button>
-                                    <button
-                                        type="button"
-                                        class="btn btn-outline-primary"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#ventanaModal"
-                                        data-bs-calculo="area"
-                                        data-bs-figura="cuadrado"
-                                    >
-                                        Calcular área
-                                    </button>
-                                </div>
-                            </form>
                         </div>
                     </div>
-                </div>
-                <!--Circulo-->
-                <div class="col-sm-12 col-md-6 col-lg-4 mt-5">
-                    <div class="card neumorphism">
-                        <div class="card-body">
-                            <div class="icon-container mx-auto">
-                                <i class="bi bi-circle display-6"></i>
+                    <!--Cuadrado-->
+                    <div class="col-sm-12 col-md-6 col-lg-4 mt-5">
+                        <div class="card neumorphism">
+                            <div class="card-body">
+                                <div class="icon-container mx-auto">
+                                    <i class="bi bi-square display-6"></i>
+                                </div>
+                                <h2
+                                    class="
+                                        card-title
+                                        my-4
+                                        display-6
+                                        text-center
+                                    "
+                                >
+                                    Cuadrado
+                                </h2>
+                                <form>
+                                    <div class="form-floating mb-3">
+                                        <input
+                                            type="number"
+                                            class="form-control"
+                                            id="InputCuadrado"
+                                            placeholder="5"
+                                        />
+                                        <label
+                                            for="InputCuadrado"
+                                            class="floatingInput"
+                                        >
+                                            Medida de los lados:
+                                        </label>
+                                    </div>
+
+                                    <div class="d-flex justify-content-evenly">
+                                        <button
+                                            type="button"
+                                            class="btn btn-outline-primary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#ventanaModal"
+                                            data-bs-calculo="perimetro"
+                                            data-bs-figura="cuadrado"
+                                        >
+                                            Calcular perímetro
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-outline-primary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#ventanaModal"
+                                            data-bs-calculo="area"
+                                            data-bs-figura="cuadrado"
+                                        >
+                                            Calcular área
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
-                            <h2 class="card-title my-4 display-6 text-center">
-                                Círculo
-                            </h2>
-
-                            <form>
-                                <div class="form-floating mb-3">
-                                    <input
-                                        type="number"
-                                        class="form-control"
-                                        id="InputCirculo"
-                                        placeholder="5"
-                                    />
-                                    <label
-                                        for="InputCirculo"
-                                        class="floatingInput"
-                                    >
-                                        Medida del radio:
-                                    </label>
-                                </div>
-
-                                <div class="d-flex justify-content-evenly">
-                                    <button
-                                        type="button"
-                                        class="btn btn-outline-primary"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#ventanaModal"
-                                        data-bs-calculo="perimetro"
-                                        data-bs-figura="circulo"
-                                    >
-                                        Calcular perímetro
-                                    </button>
-                                    <button
-                                        type="button"
-                                        class="btn btn-outline-primary"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#ventanaModal"
-                                        data-bs-calculo="area"
-                                        data-bs-figura="circulo"
-                                    >
-                                        Calcular área
-                                    </button>
-                                </div>
-                            </form>
                         </div>
                     </div>
-                </div>
-            </section>
-        </main>
+                    <!--Circulo-->
+                    <div class="col-sm-12 col-md-6 col-lg-4 mt-5">
+                        <div class="card neumorphism">
+                            <div class="card-body">
+                                <div class="icon-container mx-auto">
+                                    <i class="bi bi-circle display-6"></i>
+                                </div>
+                                <h2
+                                    class="
+                                        card-title
+                                        my-4
+                                        display-6
+                                        text-center
+                                    "
+                                >
+                                    Círculo
+                                </h2>
+
+                                <form>
+                                    <div class="form-floating mb-3">
+                                        <input
+                                            type="number"
+                                            class="form-control"
+                                            id="InputCirculo"
+                                            placeholder="5"
+                                        />
+                                        <label
+                                            for="InputCirculo"
+                                            class="floatingInput"
+                                        >
+                                            Medida del radio:
+                                        </label>
+                                    </div>
+
+                                    <div class="d-flex justify-content-evenly">
+                                        <button
+                                            type="button"
+                                            class="btn btn-outline-primary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#ventanaModal"
+                                            data-bs-calculo="perimetro"
+                                            data-bs-figura="circulo"
+                                        >
+                                            Calcular perímetro
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-outline-primary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#ventanaModal"
+                                            data-bs-calculo="area"
+                                            data-bs-figura="circulo"
+                                        >
+                                            Calcular área
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
 
         <!--Footer-->
         <footer
@@ -246,8 +269,7 @@
                 flex-wrap
                 justify-content-between
                 align-items-center
-                py-3
-                px-3
+                p-3
                 border-top
             "
         >
