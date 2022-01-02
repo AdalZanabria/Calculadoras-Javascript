@@ -22,15 +22,62 @@
         />
         <link rel="stylesheet" href="style.css" />
 
-        <title>Calculadora Geométrica</title>
+        <title>Practica de JavaScript</title>
     </head>
     <body class="d-flex flex-column h-100">
-        <div class="container-fluid p-3">
-            <!--Main-->
-            <main class="container mx-sm-auto my-4 p-4 rounded">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-auto">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="bi bi-calculator"></i>
+                    Práctica de JavaScript
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                aria-current="page"
+                                href="#"
+                                onclick="display1()"
+                                >Calculadora Geométrica
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                aria-current="page"
+                                href="#"
+                                onclick="display2()"
+                                >Calculadora de Descuentos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid p-3" id="mainWrapper">
+            <!--Main Calculadora Geométrica-->
+            <main
+                class="container mx-sm-auto my-4 p-4 rounded"
+                id="calculadoraGeometrica"
+            >
                 <header class="row">
                     <h1>Calculadora Geométrica</h1>
-                    <p>Práctica de JavaScript.</p>
+                    <p class="lead">Primer práctica de JavaScript.</p>
                 </header>
 
                 <section class="row mt-1 px-auto">
@@ -350,6 +397,35 @@
                     </div>
                 </section>
             </main>
+            <!--Main Calculadora Descuentos-->
+            <main
+                class="container mx-sm-auto my-4 p-4 rounded"
+                id="calculadoraDescuentos"
+            >
+                <header class="row">
+                    <h1>Calculadora de Descuentos</h1>
+                    <p class="lead">Segunda práctica de JavaScript.</p>
+                </header>
+
+                <section class="row mt-1 px-auto">
+                    <h2 class="display-6">
+                        Calcula el precio a pagar de tus productos con descuento
+                    </h2>
+                    <form>
+                        <label for="inputPrice"
+                            >Escribe el precio de tu producto:</label
+                        >
+                        <input id="inputPrice" type="number" />
+                        <label for="inputDiscount"
+                            >Escribe el descuento de tu producto:</label
+                        >
+                        <input id="inputDiscount" type="number" />
+                        <button type="button">
+                            Calcular el precio con descuento
+                        </button>
+                    </form>
+                </section>
+            </main>
         </div>
 
         <!--Footer-->
@@ -362,11 +438,11 @@
                 justify-content-between
                 align-items-center
                 p-3
-                border-top
+                bg-dark
             "
         >
             <div class="col-md-4 d-flex align-items-center">
-                <p class="text-muted">Adalberto Zanabria Castro, 2021.</p>
+                <p class="text-light">Adalberto Zanabria Castro, 2021.</p>
             </div>
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <li class="ms-3">
@@ -417,6 +493,7 @@
 
         <script src="./figuras.js"></script>
         <script src="./descuentos.js"></script>
+        <script src="./navigationDisplay.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

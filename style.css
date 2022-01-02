@@ -10,7 +10,7 @@ body {
     background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
 }
 
-.container-fluid {
+#mainWrapper {
     padding: 0;
 }
 
@@ -59,10 +59,6 @@ main {
 
 .bi-circle {
     color: #dc3545;
-}
-
-footer {
-    background-color: var(--gray);
 }
 
 footer p {
