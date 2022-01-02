@@ -75,6 +75,25 @@ function calcularAreaTriangulo() {
     return area;
 }
 
+// Triangulo Isósceles
+function calcularAlturaIsosceles() {
+    const lado1 = document.getElementById("InputIsosceles1");
+    const valor1 = Number(lado1.value);
+
+    const lado2 = document.getElementById("InputIsosceles2");
+    const valor2 = Number(lado2.value);
+
+    const base = document.getElementById("InputIsosceles3");
+    const valorBase = Number(base.value);
+
+    if (valor1 === valor2) {
+        const altura = Math.sqrt(valor1 * valor1 - (valorBase * valorBase) / 4);
+        return altura;
+    } else {
+        return "Error: El triángulo no es isósceles.";
+    }
+}
+
 // Circulo
 function calcularPerimetroCirculo() {
     const radio = document.getElementById("InputCirculo");
@@ -90,7 +109,6 @@ function calcularAreaCirculo() {
 
     const area = areaCirculo(valorRadio);
     return area;
-    //var modal = document.getElementById('ventanaModal').querySelector('.modal-body')
 }
 
 // Modal
@@ -121,6 +139,9 @@ ventanaModal.addEventListener("show.bs.modal", function (event) {
             break;
         case "areacirculo":
             var resultado = calcularAreaCirculo();
+            break;
+        case "alturaisosceles":
+            var resultado = calcularAlturaIsosceles();
             break;
         default:
             var resultado = "No se encontró caso.";
