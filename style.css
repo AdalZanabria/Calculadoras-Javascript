@@ -61,6 +61,10 @@ main {
     color: #dc3545;
 }
 
+#calculadoraDescuentos {
+    display: none;
+}
+
 footer p {
     margin: 0;
 }

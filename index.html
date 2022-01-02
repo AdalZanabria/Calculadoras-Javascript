@@ -420,7 +420,13 @@
                             >Escribe el descuento de tu producto:</label
                         >
                         <input id="inputDiscount" type="number" />
-                        <button type="button">
+                        <button
+                            type="button"
+                            class="btn btn-outline-primary"
+                            onclick="onClickButtonPriceDiscount()"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ventanaModal"
+                        >
                             Calcular el precio con descuento
                         </button>
                     </form>
