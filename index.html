@@ -19,7 +19,8 @@
     </head>
     <body>
         <div class="container-fluid">
-            <div class="container mx-auto my-4 p-4 rounded">
+            <!--Main-->
+            <main class="container mx-auto my-4 p-4 rounded">
                 <header class="row">
                     <h1>Calculadora Geométrica</h1>
                     <p>Práctica de JavaScript.</p>
@@ -256,39 +257,75 @@
                         </div>
                     </div>
                 </section>
-            </div>
-        </div>
+            </main>
 
-        <!-- Modal -->
-        <div
-            class="modal fade"
-            id="ventanaModal"
-            tabindex="-1"
-            aria-labelledby="ventanaModal"
-            aria-hidden="true"
-        >
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="ventanaModalLabel">
-                            Modal title
-                        </h5>
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                        ></button>
-                    </div>
-                    <div class="modal-body">...</div>
-                    <div class="modal-footer">
-                        <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-bs-dismiss="modal"
+            <!--Footer-->
+            <footer
+                class="
+                    d-flex
+                    flex-wrap
+                    justify-content-between
+                    align-items-center
+                    py-3
+                    px-3
+                    border-top
+                    row
+                "
+            >
+                <div class="col-md-4 d-flex align-items-center">
+                    <p class="text-muted">Adalberto Zanabria Castro, 2021.</p>
+                </div>
+                <ul
+                    class="
+                        nav
+                        col-md-4
+                        justify-content-end
+                        list-unstyled
+                        d-flex
+                    "
+                >
+                    <li class="ms-3">
+                        <a
+                            href="https://github.com/AdalZanabria"
+                            class="text-muted"
                         >
-                            Volver
-                        </button>
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+
+            <!-- Modal -->
+            <div
+                class="modal fade"
+                id="ventanaModal"
+                tabindex="-1"
+                aria-labelledby="ventanaModal"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ventanaModalLabel">
+                                Modal title
+                            </h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body">...</div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-dismiss="modal"
+                            >
+                                Volver
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -5,7 +5,12 @@
 body {
     background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
 }
-.container {
+
+.container-fluid {
+    padding: 0;
+}
+
+main {
     background: var(--gray);
     box-shadow: 9px 9px 16px rgb(0 0 0 / 50%);
 }
@@ -46,4 +51,12 @@ body {
 
 .bi-circle {
     color: #dc3545;
+}
+
+footer {
+    background-color: var(--gray);
+}
+
+footer p {
+    margin: 0;
 }
