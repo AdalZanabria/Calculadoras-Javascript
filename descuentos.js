@@ -19,18 +19,17 @@ function onClickButtonPriceDiscount() {
 }
 
 // Modal
-var ventanaModal = document.getElementById("ventanaModal");
-ventanaModal.addEventListener("show.bs.modal", function (event) {
+var ventanaModal2 = document.getElementById("ventanaModal2");
+ventanaModal2.addEventListener("show.bs.modal", function (event) {
     // Button that triggered the modal
     var button = event.relatedTarget;
     // Extract info from data-bs-* attributes
-    var calculo = button.getAttribute("data-bs-calculo");
+    const resultado = onClickButtonPriceDiscount();
 
     // Update the modal's content.
-    var modalTitle = ventanaModal.querySelector(".modal-title");
-    var modalBody = ventanaModal.querySelector(".modal-body");
+    var modalTitle = ventanaModal2.querySelector(".modal-title");
+    var modalBody = ventanaModal2.querySelector(".modal-body");
 
     modalTitle.textContent = "El precio con descuento es de:";
-    modalBody.textContent =
-        "El " + calculo + " del " + figura + " es igual a: " + resultado;
+    modalBody.textContent = resultado;
 });

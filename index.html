@@ -170,7 +170,7 @@
                                             type="button"
                                             class="btn btn-outline-primary"
                                             data-bs-toggle="modal"
-                                            data-bs-target="#ventanaModal"
+                                            data-bs-target="#ventanaModal1"
                                             data-bs-calculo="perimetro"
                                             data-bs-figura="triangulo"
                                         >
@@ -180,7 +180,7 @@
                                             type="button"
                                             class="btn btn-outline-primary"
                                             data-bs-toggle="modal"
-                                            data-bs-target="#ventanaModal"
+                                            data-bs-target="#ventanaModal1"
                                             data-bs-calculo="area"
                                             data-bs-figura="triangulo"
                                         >
@@ -265,7 +265,7 @@
                                             type="button"
                                             class="btn btn-outline-primary"
                                             data-bs-toggle="modal"
-                                            data-bs-target="#ventanaModal"
+                                            data-bs-target="#ventanaModal1"
                                             data-bs-calculo="altura"
                                             data-bs-figura="isosceles"
                                         >
@@ -314,7 +314,7 @@
                                             type="button"
                                             class="btn btn-outline-primary"
                                             data-bs-toggle="modal"
-                                            data-bs-target="#ventanaModal"
+                                            data-bs-target="#ventanaModal1"
                                             data-bs-calculo="perimetro"
                                             data-bs-figura="cuadrado"
                                         >
@@ -324,7 +324,7 @@
                                             type="button"
                                             class="btn btn-outline-primary"
                                             data-bs-toggle="modal"
-                                            data-bs-target="#ventanaModal"
+                                            data-bs-target="#ventanaModal1"
                                             data-bs-calculo="area"
                                             data-bs-figura="cuadrado"
                                         >
@@ -374,7 +374,7 @@
                                             type="button"
                                             class="btn btn-outline-primary"
                                             data-bs-toggle="modal"
-                                            data-bs-target="#ventanaModal"
+                                            data-bs-target="#ventanaModal1"
                                             data-bs-calculo="perimetro"
                                             data-bs-figura="circulo"
                                         >
@@ -384,7 +384,7 @@
                                             type="button"
                                             class="btn btn-outline-primary"
                                             data-bs-toggle="modal"
-                                            data-bs-target="#ventanaModal"
+                                            data-bs-target="#ventanaModal1"
                                             data-bs-calculo="area"
                                             data-bs-figura="circulo"
                                         >
@@ -425,7 +425,7 @@
                             class="btn btn-outline-primary"
                             onclick="onClickButtonPriceDiscount()"
                             data-bs-toggle="modal"
-                            data-bs-target="#ventanaModal"
+                            data-bs-target="#ventanaModal2"
                         >
                             Calcular el precio con descuento
                         </button>
@@ -462,18 +462,53 @@
             </ul>
         </footer>
 
-        <!-- Modal -->
+        <!-- Modal 1-->
         <div
             class="modal fade"
-            id="ventanaModal"
+            id="ventanaModal1"
             tabindex="-1"
-            aria-labelledby="ventanaModal"
+            aria-labelledby="ventanaModal1"
             aria-hidden="true"
         >
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="ventanaModalLabel">
+                        <h5 class="modal-title" id="ventanaModal1Label">
+                            Modal title
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">...</div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                        >
+                            Volver
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2-->
+        <div
+            class="modal fade"
+            id="ventanaModal2"
+            tabindex="-1"
+            aria-labelledby="ventanaModal2"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ventanaModal2Label">
                             Modal title
                         </h5>
                         <button

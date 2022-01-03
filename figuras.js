@@ -112,8 +112,8 @@ function calcularAreaCirculo() {
 }
 
 // Modal
-var ventanaModal = document.getElementById("ventanaModal");
-ventanaModal.addEventListener("show.bs.modal", function (event) {
+var ventanaModal1 = document.getElementById("ventanaModal1");
+ventanaModal1.addEventListener("show.bs.modal", function (event) {
     // Button that triggered the modal
     var button = event.relatedTarget;
     // Extract info from data-bs-* attributes
@@ -148,8 +148,8 @@ ventanaModal.addEventListener("show.bs.modal", function (event) {
     }
 
     // Update the modal's content.
-    var modalTitle = ventanaModal.querySelector(".modal-title");
-    var modalBody = ventanaModal.querySelector(".modal-body");
+    var modalTitle = ventanaModal1.querySelector(".modal-title");
+    var modalBody = ventanaModal1.querySelector(".modal-body");
 
     modalTitle.textContent = mayuscula(calculo) + " del " + figura;
     modalBody.textContent =
