@@ -18,6 +18,29 @@ function onClickButtonPriceDiscount() {
     return precioConDescuento;
 }
 
+function onClickButtonPriceDiscount2() {
+    const inputPrice = document.getElementById("inputPrice");
+    const priceValue = Number(inputPrice.value);
+    const selectCupon = document.getElementById("floatingSelect");
+    const cupon = Number(selectCupon.value);
+
+    var descuento;
+    switch (cupon) {
+        case 1:
+            descuento = 15;
+            break;
+        case 2:
+            descuento = 25;
+            break;
+        case 3:
+            descuento = 30;
+            break;
+        default:
+            descuento = 0;
+    }
+    return calcularPrecioConDescuento(priceValue, descuento);
+}
+
 // Modal
 var ventanaModal2 = document.getElementById("ventanaModal2");
 ventanaModal2.addEventListener("show.bs.modal", function (event) {
@@ -30,7 +53,7 @@ ventanaModal2.addEventListener("show.bs.modal", function (event) {
     if (tipoDescuento === "ingresado") {
         resultado = onClickButtonPriceDiscount();
     } else if (tipoDescuento === "cupon") {
-        resultado = 10;
+        resultado = onClickButtonPriceDiscount2();
     }
     // Update the modal's content.
     var modalTitle = ventanaModal2.querySelector(".modal-title");
