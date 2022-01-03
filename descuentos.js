@@ -24,12 +24,18 @@ ventanaModal2.addEventListener("show.bs.modal", function (event) {
     // Button that triggered the modal
     var button = event.relatedTarget;
     // Extract info from data-bs-* attributes
-    const resultado = onClickButtonPriceDiscount();
+    var tipoDescuento = button.getAttribute("data-bs-tipo");
+    var resultado;
 
+    if (tipoDescuento === "ingresado") {
+        resultado = onClickButtonPriceDiscount();
+    } else if (tipoDescuento === "cupon") {
+        resultado = 10;
+    }
     // Update the modal's content.
     var modalTitle = ventanaModal2.querySelector(".modal-title");
     var modalBody = ventanaModal2.querySelector(".modal-body");
 
     modalTitle.textContent = "El precio con descuento es de:";
-    modalBody.textContent = resultado;
+    modalBody.textContent = "$ " + resultado;
 });

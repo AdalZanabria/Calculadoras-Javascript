@@ -65,6 +65,10 @@ main {
     display: none;
 }
 
+#ingresoCupon {
+    display: none;
+}
+
 footer p {
     margin: 0;
 }
