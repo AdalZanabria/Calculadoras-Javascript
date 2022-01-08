@@ -62,14 +62,6 @@ main {
     color: var(--bs-red);
 }
 
-#calculadoraDescuentos {
-    display: none;
-}
-
-#ingresoCupon {
-    display: none;
-}
-
 footer p {
     margin: 0;
 }
