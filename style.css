@@ -16,10 +16,6 @@ body {
     background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
 }
 
-#mainWrapper {
-    padding: 0;
-}
-
 main {
     background: var(--gray);
     box-shadow: 9px 9px 16px rgb(0 0 0 / 50%);
