@@ -18,7 +18,6 @@ body {
 
 main {
     background: var(--gray);
-    box-shadow: 9px 9px 16px rgb(0 0 0 / 50%);
 }
 
 .neumorphism {
@@ -48,19 +47,19 @@ main {
 }
 
 .bi-triangle {
-    color: #20c997;
+    color: var(--bs-teal);
 }
 
 .bi-caret-up {
-    color: #198754;
+    color: var(--bs-green);
 }
 
 .bi-square {
-    color: #d63384;
+    color: var(--bs-pink);
 }
 
 .bi-circle {
-    color: #dc3545;
+    color: var(--bs-red);
 }
 
 #calculadoraDescuentos {

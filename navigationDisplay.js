@@ -1,10 +1,12 @@
 //Nav Calculadora Geométrica
 function display1() {
     const calculadora2 = document.getElementById("calculadoraDescuentos");
-    calculadora2.style.display = "none";
+    calculadora2.classList.remove("d-block");
+    calculadora2.classList.add("d-none");
 
     const calculadora1 = document.getElementById("calculadoraGeometrica");
-    calculadora1.style.display = "block";
+    calculadora1.classList.remove("d-none");
+    calculadora1.classList.add("d-flex");
 
     const title = document.getElementById("headerTitle");
     title.innerHTML = "Calculadora Geométrica";
@@ -15,10 +17,12 @@ function display1() {
 //Nav Calculadora de Descuentos
 function display2() {
     const calculadora1 = document.getElementById("calculadoraGeometrica");
-    calculadora1.style.display = "none";
+    calculadora1.classList.remove("d-flex");
+    calculadora1.classList.add("d-none");
 
     const calculadora2 = document.getElementById("calculadoraDescuentos");
-    calculadora2.style.display = "block";
+    calculadora2.classList.remove("d-none");
+    calculadora2.classList.add("d-block");
 
     const title = document.getElementById("headerTitle");
     title.innerHTML = "Calculadora de Descuentos";
