@@ -9,9 +9,9 @@ function display1() {
     calculadora1.classList.add("d-flex");
 
     const title = document.getElementById("headerTitle");
-    title.innerHTML = "Calculadora Geométrica";
+    title.innerText = "Calculadora Geométrica";
     const subtitle = document.getElementById("headerSubtitle");
-    subtitle.innerHTML = "Primer práctica de JavaScript";
+    subtitle.innerText = "Primer práctica de JavaScript";
 }
 
 //Nav Calculadora de Descuentos
@@ -25,9 +25,9 @@ function display2() {
     calculadora2.classList.add("d-block");
 
     const title = document.getElementById("headerTitle");
-    title.innerHTML = "Calculadora de Descuentos";
+    title.innerText = "Calculadora de Descuentos";
     const subtitle = document.getElementById("headerSubtitle");
-    subtitle.innerHTML = "Segunda práctica de JavaScript";
+    subtitle.innerText = "Segunda práctica de JavaScript";
 }
 
 //Calculadora de Descuentos Ingresar descuento
