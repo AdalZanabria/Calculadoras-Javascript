@@ -34,12 +34,14 @@ function display2() {
 function display3() {
     //Pills
     const cupon = document.getElementById("ingresoCupon");
-    cupon.style.display = "block";
+    cupon.classList.remove("d-none");
+    cupon.classList.add("d-block");
     const cuponPill = document.getElementById("menuCupon");
     cuponPill.classList.add("active");
 
     const ingresar = document.getElementById("ingresoDescuento");
-    ingresar.style.display = "none";
+    ingresar.classList.remove("d-block");
+    ingresar.classList.add("d-none");
     const ingresoPill = document.getElementById("menuIngresar");
     ingresoPill.classList.remove("active");
 
@@ -59,12 +61,14 @@ function display3() {
 function display4() {
     //Pills
     const ingresar = document.getElementById("ingresoDescuento");
-    ingresar.style.display = "block";
+    ingresar.classList.remove("d-none");
+    ingresar.classList.add("d-block");
     const ingresoPill = document.getElementById("menuIngresar");
     ingresoPill.classList.add("active");
 
     const cupon = document.getElementById("ingresoCupon");
-    cupon.style.display = "none";
+    cupon.classList.remove("d-block");
+    cupon.classList.add("d-none");
     const cuponPill = document.getElementById("menuCupon");
     cuponPill.classList.remove("active");
 
