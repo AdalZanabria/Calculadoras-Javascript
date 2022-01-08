@@ -1,20 +1,32 @@
-//Calculadora Geométrica
+//Nav Calculadora Geométrica
 function display1() {
     const calculadora2 = document.getElementById("calculadoraDescuentos");
     calculadora2.style.display = "none";
 
     const calculadora1 = document.getElementById("calculadoraGeometrica");
     calculadora1.style.display = "block";
+
+    const title = document.getElementById("headerTitle");
+    title.innerHTML = "Calculadora Geométrica";
+    const subtitle = document.getElementById("headerSubtitle");
+    subtitle.innerHTML = "Primer práctica de JavaScript";
 }
 
+//Nav Calculadora de Descuentos
 function display2() {
     const calculadora1 = document.getElementById("calculadoraGeometrica");
     calculadora1.style.display = "none";
 
     const calculadora2 = document.getElementById("calculadoraDescuentos");
     calculadora2.style.display = "block";
+
+    const title = document.getElementById("headerTitle");
+    title.innerHTML = "Calculadora de Descuentos";
+    const subtitle = document.getElementById("headerSubtitle");
+    subtitle.innerHTML = "Segunda práctica de JavaScript";
 }
 
+//Calculadora de Descuentos Ingresar descuento
 function display3() {
     //Pills
     const cupon = document.getElementById("ingresoCupon");
@@ -39,6 +51,7 @@ function display3() {
     botonIngreso.classList.add("btn-outline-secondary");
 }
 
+//Calculadora de Descuentos usar cupón
 function display4() {
     //Pills
     const ingresar = document.getElementById("ingresoDescuento");
