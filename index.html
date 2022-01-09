@@ -48,7 +48,7 @@
                                 id="navGeometrica"
                                 aria-current="page"
                                 href="#"
-                                onclick="display1()"
+                                onclick="displayGeometrica()"
                                 >Calculadora Geométrica
                             </a>
                         </li>
@@ -58,8 +58,18 @@
                                 id="navDescuentos"
                                 aria-current="page"
                                 href="#"
-                                onclick="display2()"
+                                onclick="displayDescuentos()"
                                 >Calculadora de Descuentos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                id="navPromedios"
+                                aria-current="page"
+                                href="#"
+                                onclick="displayPromedios()"
+                                >Calculadora de Promedios
                             </a>
                         </li>
                     </ul>
@@ -395,7 +405,7 @@
                                     aria-current="page"
                                     href="#!"
                                     id="menuIngresar"
-                                    onclick="display4()"
+                                    onclick="displayCupon()"
                                 >
                                     Ingresar descuento
                                 </a>
@@ -405,7 +415,7 @@
                                     class="nav-link"
                                     href="#!"
                                     id="menuCupon"
-                                    onclick="display3()"
+                                    onclick="displayDescuento()"
                                 >
                                     Usar cupón
                                 </a>
@@ -467,6 +477,12 @@
                         </button>
                     </form>
                 </section>
+
+                <!--Calculadora de Promedios-->
+                <section
+                    class="row px-auto d-none"
+                    id="calculadoraPromedios"
+                ></section>
             </main>
         </div>
 

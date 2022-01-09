@@ -1,5 +1,5 @@
 //Nav Calculadora Geométrica
-function display1() {
+function displayGeometrica() {
     const calculadora2 = document.getElementById("calculadoraDescuentos");
     calculadora2.classList.remove("d-block");
     calculadora2.classList.add("d-none");
@@ -8,11 +8,18 @@ function display1() {
     calculadora1.classList.remove("d-none");
     calculadora1.classList.add("d-flex");
 
-    const navGeometrica = document.getElementById("navGeometrica");
-    navGeometrica.classList.add("active");
+    const calculadora3 = document.getElementById("calculadoraPromedios");
+    calculadora3.classList.add("d-none");
+    calculadora3.classList.remove("d-block");
 
     const navDescuentos = document.getElementById("navDescuentos");
     navDescuentos.classList.remove("active");
+
+    const navPromedios = document.getElementById("navPromedios");
+    navPromedios.classList.remove("active");
+
+    const navGeometrica = document.getElementById("navGeometrica");
+    navGeometrica.classList.add("active");
 
     const title = document.getElementById("headerTitle");
     title.innerText = "Calculadora Geométrica";
@@ -21,14 +28,21 @@ function display1() {
 }
 
 //Nav Calculadora de Descuentos
-function display2() {
+function displayDescuentos() {
     const calculadora1 = document.getElementById("calculadoraGeometrica");
     calculadora1.classList.remove("d-flex");
     calculadora1.classList.add("d-none");
 
+    const calculadora3 = document.getElementById("calculadoraPromedios");
+    calculadora3.classList.add("d-none");
+    calculadora3.classList.remove("d-block");
+
     const calculadora2 = document.getElementById("calculadoraDescuentos");
     calculadora2.classList.remove("d-none");
     calculadora2.classList.add("d-block");
+
+    const navPromedios = document.getElementById("navPromedios");
+    navPromedios.classList.remove("active");
 
     const navGeometrica = document.getElementById("navGeometrica");
     navGeometrica.classList.remove("active");
@@ -42,8 +56,37 @@ function display2() {
     subtitle.innerText = "Segunda práctica de JavaScript";
 }
 
-//Calculadora de Descuentos Ingresar descuento
-function display3() {
+//Nav Calculadora de Promedios
+function displayPromedios() {
+    const calculadora1 = document.getElementById("calculadoraGeometrica");
+    calculadora1.classList.remove("d-flex");
+    calculadora1.classList.add("d-none");
+
+    const calculadora2 = document.getElementById("calculadoraDescuentos");
+    calculadora2.classList.remove("d-block");
+    calculadora2.classList.add("d-none");
+
+    const calculadora3 = document.getElementById("calculadoraPromedios");
+    calculadora3.classList.remove("d-none");
+    calculadora3.classList.add("d-block");
+
+    const navDescuentos = document.getElementById("navDescuentos");
+    navDescuentos.classList.remove("active");
+
+    const navGeometrica = document.getElementById("navGeometrica");
+    navGeometrica.classList.remove("active");
+
+    const navPromedios = document.getElementById("navPromedios");
+    navPromedios.classList.add("active");
+
+    const title = document.getElementById("headerTitle");
+    title.innerText = "Calculadora de Promedios";
+    const subtitle = document.getElementById("headerSubtitle");
+    subtitle.innerText = "Tercera práctica de JavaScript";
+}
+
+//Calculadora de Descuentos Pills para Ingresar el tipo descuento
+function displayDescuento() {
     //Pills
     const cupon = document.getElementById("ingresoCupon");
     cupon.classList.remove("d-none");
@@ -70,7 +113,7 @@ function display3() {
 }
 
 //Calculadora de Descuentos usar cupón
-function display4() {
+function displayCupon() {
     //Pills
     const ingresar = document.getElementById("ingresoDescuento");
     ingresar.classList.remove("d-none");
