@@ -8,6 +8,12 @@ function display1() {
     calculadora1.classList.remove("d-none");
     calculadora1.classList.add("d-flex");
 
+    const navGeometrica = document.getElementById("navGeometrica");
+    navGeometrica.classList.add("active");
+
+    const navDescuentos = document.getElementById("navDescuentos");
+    navDescuentos.classList.remove("active");
+
     const title = document.getElementById("headerTitle");
     title.innerText = "Calculadora Geométrica";
     const subtitle = document.getElementById("headerSubtitle");
@@ -23,6 +29,12 @@ function display2() {
     const calculadora2 = document.getElementById("calculadoraDescuentos");
     calculadora2.classList.remove("d-none");
     calculadora2.classList.add("d-block");
+
+    const navGeometrica = document.getElementById("navGeometrica");
+    navGeometrica.classList.remove("active");
+
+    const navDescuentos = document.getElementById("navDescuentos");
+    navDescuentos.classList.add("active");
 
     const title = document.getElementById("headerTitle");
     title.innerText = "Calculadora de Descuentos";
