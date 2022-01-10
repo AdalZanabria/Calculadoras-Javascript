@@ -47,3 +47,50 @@ function calcularMediana(lista) {
 
     return mediana;
 }
+
+// Moda
+function calcularModa(lista) {
+    const listaCount = {};
+
+    lista.map(function (elemento) {
+        if (listaCount[elemento]) {
+            listaCount[elemento] += 1;
+        } else {
+            listaCount[elemento] = 1;
+        }
+    });
+
+    const listaArray = Object.entries(listaCount).sort(function (
+        elementoA,
+        elementoB
+    ) {
+        return elementoA[1] - elementoB[1];
+    });
+
+    const moda = listaArray[listaArray.length - 1];
+
+    return moda[0];
+}
+
+// Media Armónica
+function calcularMediaArmonica(lista) {
+    var hayCero = false;
+    lista.map(function (elemento) {
+        if (elemento <= 0) {
+            hayCero = true;
+        }
+    });
+
+    if (hayCero == false) {
+        const sumaLista = lista.reduce(function (
+            valorAcumulado,
+            nuevoElemento
+        ) {
+            return valorAcumulado + 1 / nuevoElemento;
+        },
+        0);
+        return lista.length / sumaLista;
+    } else {
+        return "La media armónica no puede ser calculada si existe un 0 en la lista.";
+    }
+}
