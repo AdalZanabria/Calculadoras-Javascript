@@ -94,3 +94,35 @@ function calcularMediaArmonica(lista) {
         return "La media armónica no puede ser calculada si existe un 0 en la lista.";
     }
 }
+
+//Inputs dinámicos
+const inputsContainer = document.getElementById("inputsContainer");
+const agregarInput = document.getElementById("agregarInput");
+const eliminarInput = document.getElementById("eliminarInput");
+
+agregarInput.onclick = function () {
+    var nuevoInput = document.createElement("input");
+    nuevoInput.setAttribute("type", "number");
+    nuevoInput.setAttribute("class", "form-control");
+    nuevoInput.setAttribute("placeholder", "Ingresa un número");
+    nuevoInput.setAttribute("name", "array[]");
+
+    inputsContainer.appendChild(nuevoInput);
+};
+
+eliminarInput.onclick = function () {
+    var inputTags = inputsContainer.getElementsByTagName("input");
+    if (inputTags.length > 2) {
+        inputsContainer.removeChild(inputTags[inputTags.length - 1]);
+    }
+};
+
+// Crear array
+function crearArray() {
+    const inputs = document.getElementsByName("array[]");
+    var array = [];
+    for (var i = 0; i < inputs.length; i++) {
+        array.push(Number(inputs[i].value));
+    }
+    return array;
+}

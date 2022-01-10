@@ -480,20 +480,47 @@
 
                 <!--Calculadora de Promedios-->
                 <section class="row px-auto d-none" id="calculadoraPromedios">
+                    <h4>Ingresa los números de la lista:</h4>
                     <form>
-                        <div class="mb-3">
-                            <label for="inputLista" class="form-label">
-                                Ingresa la lista de números separados por comas:
-                            </label>
+                        <div class="mb-3" id="inputsContainer">
                             <input
                                 type="number"
                                 class="form-control"
                                 id="inputLista"
-                                placeholder="Ej. 1,2,3,4,5,6"
+                                name="array[]"
+                                placeholder="Ingresa un número"
+                            />
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="inputLista"
+                                name="array[]"
+                                placeholder="Ingresa un número"
                             />
                         </div>
+                        <div class="mb-3">
+                            <button
+                                type="button"
+                                class="btn btn-primary"
+                                id="agregarInput"
+                            >
+                                Agregar un número a la lista
+                            </button>
+                            <button
+                                type="button"
+                                class="btn btn-danger"
+                                id="eliminarInput"
+                            >
+                                Eliminar un número a la lista
+                            </button>
+                        </div>
 
-                        <button type="submit" class="btn btn-outline-primary">
+                        <h4>Selecciona cálculo que quieres llevar a cabo:</h4>
+                        <button
+                            type="submit"
+                            class="btn btn-outline-primary"
+                            onclick="calcularMediaAritmetica(crearArray())"
+                        >
                             Media Aritmética
                         </button>
                         <button type="submit" class="btn btn-outline-primary">
