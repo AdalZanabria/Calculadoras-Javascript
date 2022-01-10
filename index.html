@@ -381,9 +381,9 @@
 
                 <!--Calculadora de Descuentos-->
                 <section class="row px-auto d-none" id="calculadoraDescuentos">
-                    <p class="display-6">
+                    <h4>
                         Calcula el precio a pagar de tus productos con descuento
-                    </p>
+                    </h4>
                     <form>
                         <div class="form-floating mb-3">
                             <input
@@ -479,10 +479,34 @@
                 </section>
 
                 <!--Calculadora de Promedios-->
-                <section
-                    class="row px-auto d-none"
-                    id="calculadoraPromedios"
-                ></section>
+                <section class="row px-auto d-none" id="calculadoraPromedios">
+                    <form>
+                        <div class="mb-3">
+                            <label for="inputLista" class="form-label">
+                                Ingresa la lista de números separados por comas:
+                            </label>
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="inputLista"
+                                placeholder="Ej. 1,2,3,4,5,6"
+                            />
+                        </div>
+
+                        <button type="submit" class="btn btn-outline-primary">
+                            Media Aritmética
+                        </button>
+                        <button type="submit" class="btn btn-outline-primary">
+                            Media Armónica
+                        </button>
+                        <button type="submit" class="btn btn-outline-primary">
+                            Mediana
+                        </button>
+                        <button type="submit" class="btn btn-outline-primary">
+                            Moda
+                        </button>
+                    </form>
+                </section>
             </main>
         </div>
 
