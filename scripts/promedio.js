@@ -126,3 +126,37 @@ function crearArray() {
     }
     return array;
 }
+
+// Ventana Modal
+var ventanaModal3 = document.getElementById("ventanaModal3");
+ventanaModal3.addEventListener("show.bs.modal", function (event) {
+    // Button that triggered the modal
+    var button = event.relatedTarget;
+    // Extract info from data-bs-* attributes
+    var tipoPromedio = button.getAttribute("data-bs-tipo");
+    var resultado;
+
+    switch (tipoPromedio){
+        case "mediaAritmetica":
+            resultado = calcularMediaAritmetica(crearArray());
+            break;
+        case "mediaArmonica":
+            resultado = calcularMediaArmonica(crearArray());
+            break;
+        case "mediana":
+            resultado = calcularMediana(crearArray());
+            break;
+        case "moda":
+            resultado = calcularModa(crearArray());
+            break;
+        default:
+            resultado = "Operación no encontrada."
+            break;
+    }
+    // Update the modal's content.
+    var modalTitle = ventanaModal3.querySelector(".modal-title");
+    var modalBody = ventanaModal3.querySelector(".modal-body");
+
+    modalTitle.textContent = "La " + tipoPromedio + " es igual a: ";
+    modalBody.textContent = resultado;
+});

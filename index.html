@@ -1,640 +1,624 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
-        <link rel="icon" type="image/png" href="./images/favicon.png" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
-        />
-        <link rel="stylesheet" href="./styles/style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
 
-        <title>Practica de JavaScript</title>
-    </head>
-    <body class="d-flex flex-column h-100">
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-auto shadow">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <i class="bi bi-calculator"></i>
-                    Práctica de JavaScript
-                </a>
+    <title>Practica de JavaScript</title>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-auto shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-calculator"></i>
+          Práctica de JavaScript
+        </a>
 
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02"
-                    aria-controls="navbarTogglerDemo02"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <i class="bi bi-list"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link active"
-                                id="navGeometrica"
-                                aria-current="page"
-                                href="#"
-                                onclick="displayGeometrica()"
-                                >Calculadora Geométrica
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                id="navDescuentos"
-                                aria-current="page"
-                                href="#"
-                                onclick="displayDescuentos()"
-                                >Calculadora de Descuentos
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                id="navPromedios"
-                                aria-current="page"
-                                href="#"
-                                onclick="displayPromedios()"
-                                >Calculadora de Promedios
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div class="container-fluid p-3">
-            <!--Header-->
-            <header class="row text-light">
-                <h1 class="text-center" id="headerTitle">
-                    Calculadora Geométrica
-                </h1>
-                <p class="lead text-center" id="headerSubtitle">
-                    Primer práctica de JavaScript
-                </p>
-            </header>
-            <!--Main-->
-            <main class="container mx-sm-auto my-2 p-4 rounded shadow">
-                <!--Calculadora Geométrica-->
-                <section class="row px-auto" id="calculadoraGeometrica">
-                    <!--Triángulo-->
-                    <div class="col-sm-12 col-md-6 col-lg-3 mt-5">
-                        <div class="card neumorphism">
-                            <div class="card-body">
-                                <div class="icon-container mx-auto">
-                                    <i class="bi bi-triangle display-6"></i>
-                                </div>
-                                <h2
-                                    class="card-title my-4 display-6 text-center"
-                                >
-                                    Triángulo
-                                </h2>
-
-                                <form>
-                                    <div
-                                        class="d-flex flex-column justify-content-between"
-                                    >
-                                        <div class="form-floating mb-3">
-                                            <input
-                                                type="number"
-                                                class="form-control"
-                                                id="InputTriangulo1"
-                                                placeholder="5"
-                                            />
-                                            <label
-                                                for="InputTriangulo1"
-                                                class="floatingInput"
-                                            >
-                                                Medida del lado 1:
-                                            </label>
-                                        </div>
-                                        <div class="form-floating mb-3">
-                                            <input
-                                                type="number"
-                                                class="form-control"
-                                                id="InputTriangulo2"
-                                                placeholder="5"
-                                            />
-                                            <label
-                                                for="InputTriangulo2"
-                                                class="floatingInput"
-                                            >
-                                                Medida del lado 2:
-                                            </label>
-                                        </div>
-                                        <div class="form-floating mb-3">
-                                            <input
-                                                type="number"
-                                                class="form-control"
-                                                id="InputTriangulo3"
-                                                placeholder="5"
-                                            />
-                                            <label
-                                                for="InputTriangulo3"
-                                                class="floatingInput"
-                                            >
-                                                Medida de la base:
-                                            </label>
-                                        </div>
-                                        <div class="form-floating mb-3">
-                                            <input
-                                                type="number"
-                                                class="form-control"
-                                                id="InputTriangulo4"
-                                                placeholder="5"
-                                            />
-                                            <label
-                                                for="InputTriangulo4"
-                                                class="floatingInput"
-                                            >
-                                                Medida de la altura:
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex justify-content-evenly">
-                                        <button
-                                            type="button"
-                                            class="btn btn-outline-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#ventanaModal1"
-                                            data-bs-calculo="perimetro"
-                                            data-bs-figura="triangulo"
-                                        >
-                                            Calcular perímetro
-                                        </button>
-                                        <button
-                                            type="button"
-                                            class="btn btn-outline-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#ventanaModal1"
-                                            data-bs-calculo="area"
-                                            data-bs-figura="triangulo"
-                                        >
-                                            Calcular área
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Triangulo Isósceles-->
-                    <div class="col-sm-12 col-md-6 col-lg-3 mt-5">
-                        <div class="card neumorphism">
-                            <div class="card-body">
-                                <div class="icon-container mx-auto">
-                                    <i class="bi bi-caret-up display-3"></i>
-                                </div>
-                                <h2
-                                    class="card-title my-4 display-6 text-center"
-                                >
-                                    Triangulo Isósceles
-                                </h2>
-                                <form>
-                                    <div
-                                        class="d-flex flex-column justify-content-between"
-                                    >
-                                        <div class="form-floating mb-3">
-                                            <input
-                                                type="number"
-                                                class="form-control"
-                                                id="InputIsosceles1"
-                                                placeholder="5"
-                                            />
-                                            <label
-                                                for="InputIsosceles1"
-                                                class="floatingInput"
-                                            >
-                                                Medida del lado 1:
-                                            </label>
-                                        </div>
-                                        <div class="form-floating mb-3">
-                                            <input
-                                                type="number"
-                                                class="form-control"
-                                                id="InputIsosceles2"
-                                                placeholder="5"
-                                            />
-                                            <label
-                                                for="InputIsosceles2"
-                                                class="floatingInput"
-                                            >
-                                                Medida del lado 2:
-                                            </label>
-                                        </div>
-                                        <div class="form-floating mb-3">
-                                            <input
-                                                type="number"
-                                                class="form-control"
-                                                id="InputIsosceles3"
-                                                placeholder="5"
-                                            />
-                                            <label
-                                                for="InputIsosceles3"
-                                                class="floatingInput"
-                                            >
-                                                Medida de la base:
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex justify-content-evenly">
-                                        <button
-                                            type="button"
-                                            class="btn btn-outline-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#ventanaModal1"
-                                            data-bs-calculo="altura"
-                                            data-bs-figura="isosceles"
-                                        >
-                                            Calcular Altura
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Cuadrado-->
-                    <div class="col-sm-12 col-md-6 col-lg-3 mt-5">
-                        <div class="card neumorphism">
-                            <div class="card-body">
-                                <div class="icon-container mx-auto">
-                                    <i class="bi bi-square display-6"></i>
-                                </div>
-                                <h2
-                                    class="card-title my-4 display-6 text-center"
-                                >
-                                    Cuadrado
-                                </h2>
-                                <form>
-                                    <div class="form-floating mb-3">
-                                        <input
-                                            type="number"
-                                            class="form-control"
-                                            id="InputCuadrado"
-                                            placeholder="5"
-                                        />
-                                        <label
-                                            for="InputCuadrado"
-                                            class="floatingInput"
-                                        >
-                                            Medida de los lados:
-                                        </label>
-                                    </div>
-
-                                    <div class="d-flex justify-content-evenly">
-                                        <button
-                                            type="button"
-                                            class="btn btn-outline-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#ventanaModal1"
-                                            data-bs-calculo="perimetro"
-                                            data-bs-figura="cuadrado"
-                                        >
-                                            Calcular perímetro
-                                        </button>
-                                        <button
-                                            type="button"
-                                            class="btn btn-outline-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#ventanaModal1"
-                                            data-bs-calculo="area"
-                                            data-bs-figura="cuadrado"
-                                        >
-                                            Calcular área
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Circulo-->
-                    <div class="col-sm-12 col-md-6 col-lg-3 mt-5">
-                        <div class="card neumorphism">
-                            <div class="card-body">
-                                <div class="icon-container mx-auto">
-                                    <i class="bi bi-circle display-6"></i>
-                                </div>
-                                <h2
-                                    class="card-title my-4 display-6 text-center"
-                                >
-                                    Círculo
-                                </h2>
-
-                                <form>
-                                    <div class="form-floating mb-3">
-                                        <input
-                                            type="number"
-                                            class="form-control"
-                                            id="InputCirculo"
-                                            placeholder="5"
-                                        />
-                                        <label
-                                            for="InputCirculo"
-                                            class="floatingInput"
-                                        >
-                                            Medida del radio:
-                                        </label>
-                                    </div>
-
-                                    <div class="d-flex justify-content-evenly">
-                                        <button
-                                            type="button"
-                                            class="btn btn-outline-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#ventanaModal1"
-                                            data-bs-calculo="perimetro"
-                                            data-bs-figura="circulo"
-                                        >
-                                            Calcular perímetro
-                                        </button>
-                                        <button
-                                            type="button"
-                                            class="btn btn-outline-primary"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#ventanaModal1"
-                                            data-bs-calculo="area"
-                                            data-bs-figura="circulo"
-                                        >
-                                            Calcular área
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!--Calculadora de Descuentos-->
-                <section class="row px-auto d-none" id="calculadoraDescuentos">
-                    <h4>
-                        Calcula el precio a pagar de tus productos con descuento
-                    </h4>
-                    <form>
-                        <div class="form-floating mb-3">
-                            <input
-                                id="inputPrice"
-                                type="number"
-                                class="form-control"
-                                placeholder="5"
-                            />
-                            <label for="inputPrice" class="floatingInput">
-                                Precio del producto:
-                            </label>
-                        </div>
-
-                        <!--Pills select-->
-                        <ul class="nav nav-pills">
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link active"
-                                    aria-current="page"
-                                    href="#!"
-                                    id="menuIngresar"
-                                    onclick="displayCupon()"
-                                >
-                                    Ingresar descuento
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    href="#!"
-                                    id="menuCupon"
-                                    onclick="displayDescuento()"
-                                >
-                                    Usar cupón
-                                </a>
-                            </li>
-                        </ul>
-                        <!--Escribe el desceunto-->
-                        <div class="form-floating mb-3" id="ingresoDescuento">
-                            <input
-                                id="inputDiscount"
-                                type="number"
-                                class="form-control"
-                                placeholder="5"
-                            />
-                            <label for="inputDiscount" class="floatingInput">
-                                Descuento del producto:
-                            </label>
-                        </div>
-                        <!--Selecciona Cupón-->
-                        <div
-                            class="form-floating mb-3 d-none"
-                            id="ingresoCupon"
-                        >
-                            <select
-                                class="form-select"
-                                id="floatingSelect"
-                                aria-label="Floating label select example"
-                            >
-                                <option value="1">15% de descuento</option>
-                                <option value="2">25% de descuento</option>
-                                <option value="3">30% de descuento</option>
-                            </select>
-                            <label for="floatingSelect"
-                                >Selecciona un cupón:</label
-                            >
-                        </div>
-
-                        <button
-                            type="button"
-                            class="btn btn-outline-primary"
-                            onclick="onClickButtonPriceDiscount2()"
-                            data-bs-toggle="modal"
-                            data-bs-target="#ventanaModal2"
-                            data-bs-tipo="ingresado"
-                            id="botonIngreso"
-                        >
-                            Calcular el precio con descuento ingresado
-                        </button>
-                        <button
-                            type="button"
-                            class="btn btn-outline-secondary"
-                            onclick="onClickButtonPriceDiscount()"
-                            data-bs-toggle="modal"
-                            data-bs-target="#ventanaModal2"
-                            data-bs-tipo="cupon"
-                            id="botonCupon"
-                            disabled
-                        >
-                            Calcular el precio con descuento de cupón
-                        </button>
-                    </form>
-                </section>
-
-                <!--Calculadora de Promedios-->
-                <section class="row px-auto d-none" id="calculadoraPromedios">
-                    <h4>Ingresa los números de la lista:</h4>
-                    <form>
-                        <div class="mb-3" id="inputsContainer">
-                            <input
-                                type="number"
-                                class="form-control"
-                                id="inputLista"
-                                name="array[]"
-                                placeholder="Ingresa un número"
-                            />
-                            <input
-                                type="number"
-                                class="form-control"
-                                id="inputLista"
-                                name="array[]"
-                                placeholder="Ingresa un número"
-                            />
-                        </div>
-                        <div class="mb-3">
-                            <button
-                                type="button"
-                                class="btn btn-primary"
-                                id="agregarInput"
-                            >
-                                Agregar un número a la lista
-                            </button>
-                            <button
-                                type="button"
-                                class="btn btn-danger"
-                                id="eliminarInput"
-                            >
-                                Eliminar un número a la lista
-                            </button>
-                        </div>
-
-                        <h4>Selecciona cálculo que quieres llevar a cabo:</h4>
-                        <button
-                            type="submit"
-                            class="btn btn-outline-primary"
-                            onclick="calcularMediaAritmetica(crearArray())"
-                        >
-                            Media Aritmética
-                        </button>
-                        <button type="submit" class="btn btn-outline-primary">
-                            Media Armónica
-                        </button>
-                        <button type="submit" class="btn btn-outline-primary">
-                            Mediana
-                        </button>
-                        <button type="submit" class="btn btn-outline-primary">
-                            Moda
-                        </button>
-                    </form>
-                </section>
-            </main>
-        </div>
-
-        <!--Footer-->
-        <footer
-            class="footer mt-auto d-flex flex-wrap justify-content-between align-items-center p-3 bg-dark"
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-            <div class="col-md-4 d-flex align-items-center">
-                <p class="text-light">Adalberto Zanabria Castro, 2022.</p>
-            </div>
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3">
-                    <a
-                        href="https://github.com/AdalZanabria"
-                        class="text-muted"
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="navGeometrica"
+                aria-current="page"
+                href="#"
+                onclick="displayGeometrica()"
+                >Calculadora Geométrica
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="navDescuentos"
+                aria-current="page"
+                href="#"
+                onclick="displayDescuentos()"
+                >Calculadora de Descuentos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="navPromedios"
+                aria-current="page"
+                href="#"
+                onclick="displayPromedios()"
+                >Calculadora de Promedios
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-3">
+      <!--Header-->
+      <header class="row text-light">
+        <h1 class="text-center" id="headerTitle">Calculadora Geométrica</h1>
+        <p class="lead text-center" id="headerSubtitle">
+          Primer práctica de JavaScript
+        </p>
+      </header>
+      <!--Main-->
+      <main class="container mx-sm-auto my-2 p-4 rounded shadow">
+        <!--Calculadora Geométrica-->
+        <section class="row px-auto" id="calculadoraGeometrica">
+          <!--Triángulo-->
+          <div class="col-sm-12 col-md-6 col-lg-3 mt-5">
+            <div class="card neumorphism">
+              <div class="card-body">
+                <div class="icon-container mx-auto">
+                  <i class="bi bi-triangle display-6"></i>
+                </div>
+                <h2 class="card-title my-4 display-6 text-center">Triángulo</h2>
+
+                <form>
+                  <div class="d-flex flex-column justify-content-between">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="InputTriangulo1"
+                        placeholder="5"
+                      />
+                      <label for="InputTriangulo1" class="floatingInput">
+                        Medida del lado 1:
+                      </label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="InputTriangulo2"
+                        placeholder="5"
+                      />
+                      <label for="InputTriangulo2" class="floatingInput">
+                        Medida del lado 2:
+                      </label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="InputTriangulo3"
+                        placeholder="5"
+                      />
+                      <label for="InputTriangulo3" class="floatingInput">
+                        Medida de la base:
+                      </label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="InputTriangulo4"
+                        placeholder="5"
+                      />
+                      <label for="InputTriangulo4" class="floatingInput">
+                        Medida de la altura:
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-evenly">
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#ventanaModal1"
+                      data-bs-calculo="perimetro"
+                      data-bs-figura="triangulo"
                     >
-                        <i class="bi bi-github"></i>
-                    </a>
-                </li>
+                      Calcular perímetro
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#ventanaModal1"
+                      data-bs-calculo="area"
+                      data-bs-figura="triangulo"
+                    >
+                      Calcular área
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!--Triangulo Isósceles-->
+          <div class="col-sm-12 col-md-6 col-lg-3 mt-5">
+            <div class="card neumorphism">
+              <div class="card-body">
+                <div class="icon-container mx-auto">
+                  <i class="bi bi-caret-up display-3"></i>
+                </div>
+                <h2 class="card-title my-4 display-6 text-center">
+                  Triangulo Isósceles
+                </h2>
+                <form>
+                  <div class="d-flex flex-column justify-content-between">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="InputIsosceles1"
+                        placeholder="5"
+                      />
+                      <label for="InputIsosceles1" class="floatingInput">
+                        Medida del lado 1:
+                      </label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="InputIsosceles2"
+                        placeholder="5"
+                      />
+                      <label for="InputIsosceles2" class="floatingInput">
+                        Medida del lado 2:
+                      </label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="InputIsosceles3"
+                        placeholder="5"
+                      />
+                      <label for="InputIsosceles3" class="floatingInput">
+                        Medida de la base:
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-evenly">
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#ventanaModal1"
+                      data-bs-calculo="altura"
+                      data-bs-figura="isosceles"
+                    >
+                      Calcular Altura
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!--Cuadrado-->
+          <div class="col-sm-12 col-md-6 col-lg-3 mt-5">
+            <div class="card neumorphism">
+              <div class="card-body">
+                <div class="icon-container mx-auto">
+                  <i class="bi bi-square display-6"></i>
+                </div>
+                <h2 class="card-title my-4 display-6 text-center">Cuadrado</h2>
+                <form>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="InputCuadrado"
+                      placeholder="5"
+                    />
+                    <label for="InputCuadrado" class="floatingInput">
+                      Medida de los lados:
+                    </label>
+                  </div>
+
+                  <div class="d-flex justify-content-evenly">
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#ventanaModal1"
+                      data-bs-calculo="perimetro"
+                      data-bs-figura="cuadrado"
+                    >
+                      Calcular perímetro
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#ventanaModal1"
+                      data-bs-calculo="area"
+                      data-bs-figura="cuadrado"
+                    >
+                      Calcular área
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!--Circulo-->
+          <div class="col-sm-12 col-md-6 col-lg-3 mt-5">
+            <div class="card neumorphism">
+              <div class="card-body">
+                <div class="icon-container mx-auto">
+                  <i class="bi bi-circle display-6"></i>
+                </div>
+                <h2 class="card-title my-4 display-6 text-center">Círculo</h2>
+
+                <form>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="InputCirculo"
+                      placeholder="5"
+                    />
+                    <label for="InputCirculo" class="floatingInput">
+                      Medida del radio:
+                    </label>
+                  </div>
+
+                  <div class="d-flex justify-content-evenly">
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#ventanaModal1"
+                      data-bs-calculo="perimetro"
+                      data-bs-figura="circulo"
+                    >
+                      Calcular perímetro
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#ventanaModal1"
+                      data-bs-calculo="area"
+                      data-bs-figura="circulo"
+                    >
+                      Calcular área
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Calculadora de Descuentos-->
+        <section class="row px-auto d-none" id="calculadoraDescuentos">
+          <h4>Calcula el precio a pagar de tus productos con descuento</h4>
+          <form>
+            <div class="form-floating mb-3">
+              <input
+                id="inputPrice"
+                type="number"
+                class="form-control"
+                placeholder="5"
+              />
+              <label for="inputPrice" class="floatingInput">
+                Precio del producto:
+              </label>
+            </div>
+
+            <!--Pills select-->
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#!"
+                  id="menuIngresar"
+                  onclick="displayCupon()"
+                >
+                  Ingresar descuento
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#!"
+                  id="menuCupon"
+                  onclick="displayDescuento()"
+                >
+                  Usar cupón
+                </a>
+              </li>
             </ul>
-        </footer>
-
-        <!--Modal 1-->
-        <div
-            class="modal fade"
-            id="ventanaModal1"
-            tabindex="-1"
-            aria-labelledby="ventanaModal1"
-            aria-hidden="true"
-        >
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="ventanaModal1Label">
-                            Modal title
-                        </h5>
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                        ></button>
-                    </div>
-                    <div class="modal-body">...</div>
-                    <div class="modal-footer">
-                        <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-bs-dismiss="modal"
-                        >
-                            Volver
-                        </button>
-                    </div>
-                </div>
+            <!--Escribe el desceunto-->
+            <div class="form-floating mb-3" id="ingresoDescuento">
+              <input
+                id="inputDiscount"
+                type="number"
+                class="form-control"
+                placeholder="5"
+              />
+              <label for="inputDiscount" class="floatingInput">
+                Descuento del producto:
+              </label>
             </div>
-        </div>
-
-        <!--Modal 2-->
-        <div
-            class="modal fade"
-            id="ventanaModal2"
-            tabindex="-1"
-            aria-labelledby="ventanaModal2"
-            aria-hidden="true"
-        >
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="ventanaModal2Label">
-                            Modal title
-                        </h5>
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                        ></button>
-                    </div>
-                    <div class="modal-body">...</div>
-                    <div class="modal-footer">
-                        <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-bs-dismiss="modal"
-                        >
-                            Volver
-                        </button>
-                    </div>
-                </div>
+            <!--Selecciona Cupón-->
+            <div class="form-floating mb-3 d-none" id="ingresoCupon">
+              <select
+                class="form-select"
+                id="floatingSelect"
+                aria-label="Floating label select example"
+              >
+                <option value="1">15% de descuento</option>
+                <option value="2">25% de descuento</option>
+                <option value="3">30% de descuento</option>
+              </select>
+              <label for="floatingSelect">Selecciona un cupón:</label>
             </div>
-        </div>
 
-        <!--JavaScript Imports-->
-        <script src="./scripts/figuras.js"></script>
-        <script src="./scripts/descuentos.js"></script>
-        <script src="./scripts/promedio.js"></script>
-        <script src="./scripts/navigationDisplay.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              onclick="onClickButtonPriceDiscount2()"
+              data-bs-toggle="modal"
+              data-bs-target="#ventanaModal2"
+              data-bs-tipo="ingresado"
+              id="botonIngreso"
+            >
+              Calcular el precio con descuento ingresado
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              onclick="onClickButtonPriceDiscount()"
+              data-bs-toggle="modal"
+              data-bs-target="#ventanaModal2"
+              data-bs-tipo="cupon"
+              id="botonCupon"
+              disabled
+            >
+              Calcular el precio con descuento de cupón
+            </button>
+          </form>
+        </section>
+
+        <!--Calculadora de Promedios-->
+        <section class="row px-auto d-none" id="calculadoraPromedios">
+          <h4>Ingresa los números de la lista:</h4>
+          <form>
+            <div class="mb-3" id="inputsContainer">
+              <input
+                type="number"
+                class="form-control"
+                id="inputLista"
+                name="array[]"
+                placeholder="Ingresa un número"
+              />
+              <input
+                type="number"
+                class="form-control"
+                id="inputLista"
+                name="array[]"
+                placeholder="Ingresa un número"
+              />
+            </div>
+            <div class="mb-3">
+              <button type="button" class="btn btn-primary" id="agregarInput">
+                Agregar un número a la lista
+              </button>
+              <button type="button" class="btn btn-danger" id="eliminarInput">
+                Eliminar un número a la lista
+              </button>
+            </div>
+
+            <h4>Selecciona cálculo que quieres realizar:</h4>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#ventanaModal3"
+              data-bs-tipo="mediaAritmetica"
+            >
+              Media Aritmética
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#ventanaModal3"
+              data-bs-tipo="mediaArmonica"
+            >
+              Media Armónica
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#ventanaModal3"
+              data-bs-tipo="mediana"
+            >
+              Mediana
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#ventanaModal3"
+              data-bs-tipo="moda"
+            >
+              Moda
+            </button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <!--Footer-->
+    <footer
+      class="footer mt-auto d-flex flex-wrap justify-content-between align-items-center p-3 bg-dark"
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <p class="text-light">Adalberto Zanabria Castro, 2022.</p>
+      </div>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a href="https://github.com/AdalZanabria" class="text-muted">
+            <i class="bi bi-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <!--Modal 1-->
+    <div
+      class="modal fade"
+      id="ventanaModal1"
+      tabindex="-1"
+      aria-labelledby="ventanaModal1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ventanaModal1Label">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Volver
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal 2-->
+    <div
+      class="modal fade"
+      id="ventanaModal2"
+      tabindex="-1"
+      aria-labelledby="ventanaModal2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ventanaModal2Label">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Volver
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal 3-->
+    <div
+      class="modal fade"
+      id="ventanaModal3"
+      tabindex="-1"
+      aria-labelledby="ventanaModal3"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ventanaModal3Label">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Volver
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--JavaScript Imports-->
+    <script src="./scripts/figuras.js"></script>
+    <script src="./scripts/descuentos.js"></script>
+    <script src="./scripts/promedio.js"></script>
+    <script src="./scripts/navigationDisplay.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
