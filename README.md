@@ -1,22 +1,16 @@
-# Javascript-Practica
+# Calculadoras Javascript
 
-## Taller No.1 de JavaScript: Figuras Geométricas
+## Práctica No.1 de JavaScript: Figuras Geométricas
 
--   Primer paso: Definir las fórmulas. ✏
--   Segundo paso: Implementar las fórmulas en JavaScript. 🧮
--   Tercer paso: Crear funciones. 📐
--   Cuarto paso: Integrar JavaScript con HTML. 🖥️
+Calculadora de áreas y perímetros de figuras geométricas como triángulos, círculo y cuadrado.
 
-## Taller No.2 de JavaScript: Porcentajes y Descuentos
+## Práctica No.2 de JavaScript: Porcentajes y Descuentos
 
--   Primer paso: Definir las fórmulas. ✏
--   Segundio paso: Implementar las fórmulas en JavaScript. 🧮
--   Tercer paso: Crear funciones. 📐
--   Cuarto paso: Integrar JavaScript con HTML. 🖥️
+Calculadora para descontar un porcentaje a un valor, ya sea introduciendo un descuento deseado, o seleccionando uno preestablecido en una lista de "cupones".
 
-## Taller No.3 de JavaScript: Promedio, mediana y moda
+## Práctica No.3 de JavaScript: Promedio, mediana y moda
 
--   Primer paso: Definir las fórmulas. ✏
--   Segundo paso: Implementar las foórmulas en JavaScript. 🧮
--   Tercer paso: Crear Funciones. 📐
--   Cuarto paso: Integrar JavaScript con HTML. 🖥️
+Calculadora para conseguir los valores de media aritmética, media armónica, mediana y/o moda de una lista de números ingresados.
+
+## Práctica No.4 de JavaScriot: Salarios
+Calculadora de operaciones estadísticas básicas de un porcentaje de población en base a una lista dada de personas con nombre y salario. 
