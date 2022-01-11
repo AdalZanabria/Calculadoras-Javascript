@@ -13,11 +13,7 @@ function calcularMediaAritmetica(lista) {
 
 //Mediana
 function esPar(numero) {
-    if (numero % 2 === 0) {
-        return true;
-    } else {
-        return false;
-    }
+        return (numero % 2 === 0);
 }
 
 function calcularMediana(lista) {
