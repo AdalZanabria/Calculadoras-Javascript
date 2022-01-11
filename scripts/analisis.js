@@ -34,3 +34,22 @@ const spliceCount = salariosColSorted.length - spliceStart;
 const salariosColTop10 = salariosColSorted.splice(spliceStart, spliceCount);
 const medianaTop10Col = medianaSalarios(salariosColTop10);
 
+// Personas Dinámicas
+const personasContainer = document.getElementById("personasContainer");
+const agregarPersona = document.getElementById("agregarPersona");
+const eliminarPersona = document.getElementById("eliminarPersona");
+
+agregarPersona.onclick = function () {
+    var personaDiv1 = document.querySelector("#personaDiv1");
+    var nuevaPersona = personaDiv1.cloneNode(true);
+
+    personasContainer.appendChild(nuevaPersona);
+};
+
+eliminarPersona.onclick = function () {
+    var personasDivs = personasContainer.getElementsByClassName("personaDiv");
+    if (personasDivs.length > 1) {
+        personasContainer.removeChild(personasDivs[personasDivs.length - 1]);
+    }
+};
+

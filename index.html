@@ -72,6 +72,16 @@
                 >Calculadora de Promedios
               </a>
             </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="navSalarios"
+                aria-current="page"
+                href="#"
+                onclick="displaySalarios()"
+                >Calculadora de Salarios
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -491,6 +501,51 @@
               Moda
             </button>
           </form>
+        </section>
+
+        <!--Calculadora de Salarios-->
+        <section class="row px-auto d-none" id="calculadoraSalarios">
+          <h4>Ingresa las personas a calcular:</h4>
+          <div class="mb-3">
+            <button type="button" class="btn btn-primary" id="agregarPersona">
+              Agregar una persona
+            </button>
+            <button type="button" class="btn btn-danger" id="eliminarPersona">
+              Eliminar una persona
+            </button>
+          </div>
+
+          <div class="d-flex flex-wrap mt-4" id="personasContainer">
+
+            <div class="neumorphism rounded p-2 m-2 personaDiv" name="personas[]" id="personaDiv1">
+              <p class="lead">Persona</p>
+              <form>
+                <div class="form-floating mb-3">
+                  <input
+                    id="inputNombre"
+                    type="text"
+                    class="form-control"
+                    placeholder="Jose"
+                  />
+                  <label for="inputNombre" class="floatingInput">
+                    Nombre de la persona:
+                  </label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    id="inputSalario"
+                    type="number"
+                    class="form-control"
+                    placeholder="500"
+                  />
+                  <label for="inputNombre" class="floatingInput">
+                    Salario de la persona:
+                  </label>
+                </div>
+              </form>
+            </div>
+            
+          </div>
         </section>
       </main>
     </div>
