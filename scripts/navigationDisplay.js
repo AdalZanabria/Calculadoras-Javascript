@@ -12,6 +12,10 @@ function displayGeometrica() {
     calculadora4.classList.remove("d-block");
     calculadora4.classList.add("d-none");
 
+    const calculadora5 = document.getElementById("calculadoraBasica");
+    calculadora5.classList.remove("d-block");
+    calculadora5.classList.add("d-none"); 
+
     const calculadora1 = document.getElementById("calculadoraGeometrica");
     calculadora1.classList.remove("d-none");
     calculadora1.classList.add("d-flex");
@@ -24,6 +28,9 @@ function displayGeometrica() {
 
     const navSalarios = document.getElementById("navSalarios");
     navSalarios.classList.remove("active");
+
+    const navCalculadora = document.getElementById("navCalculadora");
+    navCalculadora.classList.remove("active");
 
     const navGeometrica = document.getElementById("navGeometrica");
     navGeometrica.classList.add("active");
@@ -48,6 +55,10 @@ function displayDescuentos() {
     calculadora4.classList.remove("d-block");
     calculadora4.classList.add("d-none");
 
+    const calculadora5 = document.getElementById("calculadoraBasica");
+    calculadora5.classList.remove("d-block");
+    calculadora5.classList.add("d-none"); 
+
     const calculadora2 = document.getElementById("calculadoraDescuentos");
     calculadora2.classList.remove("d-none");
     calculadora2.classList.add("d-block");
@@ -60,6 +71,9 @@ function displayDescuentos() {
 
     const navSalarios = document.getElementById("navSalarios");
     navSalarios.classList.remove("active");
+
+    const navCalculadora = document.getElementById("navCalculadora");
+    navCalculadora.classList.remove("active");
 
     const navDescuentos = document.getElementById("navDescuentos");
     navDescuentos.classList.add("active");
@@ -84,6 +98,10 @@ function displayPromedios() {
     calculadora4.classList.remove("d-block");
     calculadora4.classList.add("d-none");
 
+    const calculadora5 = document.getElementById("calculadoraBasica");
+    calculadora5.classList.remove("d-block");
+    calculadora5.classList.add("d-none"); 
+
     const calculadora3 = document.getElementById("calculadoraPromedios");
     calculadora3.classList.remove("d-none");
     calculadora3.classList.add("d-block");
@@ -96,6 +114,9 @@ function displayPromedios() {
 
     const navSalarios = document.getElementById("navSalarios");
     navSalarios.classList.remove("active");
+
+    const navCalculadora = document.getElementById("navCalculadora");
+    navCalculadora.classList.remove("active");
 
     const navPromedios = document.getElementById("navPromedios");
     navPromedios.classList.add("active");
@@ -160,7 +181,7 @@ function displayCupon() {
     botonCupon.classList.add("btn-outline-secondary");
 }
 
-// CAlculadora de Salarios
+// Calculadora de Salarios
 function displaySalarios() {
     const calculadora1 = document.getElementById("calculadoraGeometrica");
     calculadora1.classList.remove("d-flex");
@@ -173,6 +194,10 @@ function displaySalarios() {
     const calculadora3 = document.getElementById("calculadoraPromedios");
     calculadora3.classList.remove("d-block");
     calculadora3.classList.add("d-none");
+
+    const calculadora5 = document.getElementById("calculadoraBasica");
+    calculadora5.classList.remove("d-block");
+    calculadora5.classList.add("d-none"); 
 
     const calculadora4 = document.getElementById("calculadoraSalarios");
     calculadora4.classList.remove("d-none");
@@ -187,6 +212,9 @@ function displaySalarios() {
     const navGeometrica = document.getElementById("navGeometrica");
     navGeometrica.classList.remove("active");
 
+    const navCalculadora = document.getElementById("navCalculadora");
+    navCalculadora.classList.remove("active");
+
     const navSalarios = document.getElementById("navSalarios");
     navSalarios.classList.add("active");
 
@@ -194,4 +222,47 @@ function displaySalarios() {
     title.innerText = "Calculadora de Mediana de Salarios";
     const subtitle = document.getElementById("headerSubtitle");
     subtitle.innerText = "Cuarta práctica de JavaScript";
+}
+
+// Calculadora Básica
+function displayCalculadora() {
+    const calculadora1 = document.getElementById("calculadoraGeometrica");
+    calculadora1.classList.remove("d-flex");
+    calculadora1.classList.add("d-none");
+
+    const calculadora2 = document.getElementById("calculadoraDescuentos");
+    calculadora2.classList.remove("d-block");
+    calculadora2.classList.add("d-none");
+
+    const calculadora3 = document.getElementById("calculadoraPromedios");
+    calculadora3.classList.remove("d-block");
+    calculadora3.classList.add("d-none");
+
+    const calculadora4 = document.getElementById("calculadoraSalarios");
+    calculadora4.classList.remove("d-block");
+    calculadora4.classList.add("d-none");
+
+    const calculadora5 = document.getElementById("calculadoraBasica");
+    calculadora5.classList.remove("d-none");
+    calculadora5.classList.add("d-block");    
+
+    const navGeometrica = document.getElementById("navGeometrica");
+    navGeometrica.classList.remove("active");
+
+    const navDescuentos = document.getElementById("navDescuentos");
+    navDescuentos.classList.remove("active");
+
+    const navPromedios = document.getElementById("navPromedios");
+    navPromedios.classList.remove("active");
+
+    const navSalarios = document.getElementById("navSalarios");
+    navSalarios.classList.remove("active");
+
+    const navCalculadora = document.getElementById("navCalculadora");
+    navCalculadora.classList.add("active");
+
+    const title = document.getElementById("headerTitle");
+    title.innerText = "Calculadora Básica";
+    const subtitle = document.getElementById("headerSubtitle");
+    subtitle.innerText = "Quinta práctica de JavaScript";
 }

@@ -13,4 +13,9 @@ Calculadora para descontar un porcentaje a un valor, ya sea introduciendo un des
 Calculadora para conseguir los valores de media aritmética, media armónica, mediana y/o moda de una lista de números ingresados.
 
 ## Práctica No.4 de JavaScriot: Salarios
-Calculadora de operaciones estadísticas básicas de un porcentaje de población en base a una lista dada de personas con nombre y salario. 
+
+Calculadora de operaciones estadísticas básicas de un porcentaje de población en base a una lista dada de personas con nombre y salario.
+
+## Práctica No.5 de JavaScript: Calculadora básica
+
+Calculadora para realizar operaciones ariméticas básicas.
