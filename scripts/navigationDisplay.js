@@ -8,6 +8,10 @@ function displayGeometrica() {
     calculadora3.classList.remove("d-block");
     calculadora3.classList.add("d-none");
 
+    const calculadora4 = document.getElementById("calculadoraSalarios");
+    calculadora4.classList.remove("d-block");
+    calculadora4.classList.add("d-none");
+
     const calculadora1 = document.getElementById("calculadoraGeometrica");
     calculadora1.classList.remove("d-none");
     calculadora1.classList.add("d-flex");
@@ -40,6 +44,10 @@ function displayDescuentos() {
     calculadora3.classList.remove("d-block");
     calculadora3.classList.add("d-none");
 
+    const calculadora4 = document.getElementById("calculadoraSalarios");
+    calculadora4.classList.remove("d-block");
+    calculadora4.classList.add("d-none");
+
     const calculadora2 = document.getElementById("calculadoraDescuentos");
     calculadora2.classList.remove("d-none");
     calculadora2.classList.add("d-block");
@@ -71,6 +79,10 @@ function displayPromedios() {
     const calculadora2 = document.getElementById("calculadoraDescuentos");
     calculadora2.classList.remove("d-block");
     calculadora2.classList.add("d-none");
+
+    const calculadora4 = document.getElementById("calculadoraSalarios");
+    calculadora4.classList.remove("d-block");
+    calculadora4.classList.add("d-none");
 
     const calculadora3 = document.getElementById("calculadoraPromedios");
     calculadora3.classList.remove("d-none");
@@ -165,7 +177,6 @@ function displaySalarios() {
     const calculadora4 = document.getElementById("calculadoraSalarios");
     calculadora4.classList.remove("d-none");
     calculadora4.classList.add("d-block");
-    
 
     const navDescuentos = document.getElementById("navDescuentos");
     navDescuentos.classList.remove("active");
@@ -180,7 +191,7 @@ function displaySalarios() {
     navSalarios.classList.add("active");
 
     const title = document.getElementById("headerTitle");
-    title.innerText = "Calculadora de Salarios";
+    title.innerText = "Calculadora de Mediana de Salarios";
     const subtitle = document.getElementById("headerSubtitle");
     subtitle.innerText = "Cuarta práctica de JavaScript";
 }

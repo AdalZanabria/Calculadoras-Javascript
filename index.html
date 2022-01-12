@@ -567,7 +567,10 @@
 
                 <!--Calculadora de Salarios-->
                 <section class="row px-auto d-none" id="calculadoraSalarios">
-                    <h4>Ingresa las personas a calcular:</h4>
+                    <h4>
+                        Ingresa las personas a calcular su mediana total, y la
+                        mediana de un top porcentual de la lista:
+                    </h4>
                     <div class="mb-3">
                         <button
                             type="button"
@@ -672,17 +675,25 @@
                     </div>
 
                     <div class="container">
-                        <input
-                            type="number"
-                            id="inputPorciento"
-                            placeholder="Ingresar porcentaje"
-                        />
+                        <div class="form-floating my-3">
+                            <input
+                                id="inputPorciento"
+                                type="number"
+                                class="form-control"
+                                placeholder="Ingresar porcentaje"
+                            />
+                            <label for="inputNombrePorcientoatingInput">
+                                Ingresar un porcentaje de la lista
+                            </label>
+                        </div>
                         <button
                             type="button"
-                            class="btn btn-primary"
+                            class="btn btn-outline-primary"
                             id="MediaPorcentaje"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ventanaModal4"
                         >
-                            Mediana de un porcentaje
+                            Mediana del porcentaje
                         </button>
                     </div>
                 </section>
@@ -813,12 +824,47 @@
             </div>
         </div>
 
+        <!--Modal 4-->
+        <div
+            class="modal fade"
+            id="ventanaModal4"
+            tabindex="-1"
+            aria-labelledby="ventanaModal4"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ventanaModal4Label">
+                            Modal title
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">...</div>
+                    <div class="modal-body b2">...</div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                        >
+                            Volver
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--JavaScript Imports-->
         <script src="./scripts/figuras.js"></script>
         <script src="./scripts/descuentos.js"></script>
         <script src="./scripts/promedio.js"></script>
         <script src="./scripts/navigationDisplay.js"></script>
-        <script src="./scripts/salarios.js"></script>
         <script src="./scripts/analisis.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

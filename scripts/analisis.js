@@ -94,11 +94,32 @@ function llenarLista() {
     }
 }
 
-const btnMedianaPorcentaje = document.getElementById("MediaPorcentaje");
-const inputPorciento = document.getElementById("inputPorciento");
-
-btnMedianaPorcentaje.onclick = function () {
+// Ventana Modal
+var ventanaModal4 = document.getElementById("ventanaModal4");
+ventanaModal4.addEventListener("show.bs.modal", function (event) {
+    // Button that triggered the modal
+    var button = event.relatedTarget;
+    const inputPorciento = document.getElementById("inputPorciento");
     personas = [];
     llenarLista();
-    console.log(medianaTopPorciento(personas, Number(inputPorciento.value)));
-};
+    var resultado = medianaTopPorciento(personas, Number(inputPorciento.value));
+
+    // Update the modal's content.
+    var modalTitle = ventanaModal4.querySelector(".modal-title");
+    var modalBody = ventanaModal4.querySelector(".modal-body");
+    var modalBody2 = ventanaModal4.querySelector(".b2");
+
+    modalTitle.textContent = "Mediana de la lista de personas";
+    modalBody.textContent =
+        "La mediana de las " +
+        personas.length +
+        " personas es igual a: $" +
+        medianaGeneral(personas) +
+        ".";
+    modalBody2.textContent =
+        "La mediana del top " +
+        Number(inputPorciento.value) +
+        "% de las personas es igual a: $" +
+        resultado +
+        ".";
+});
