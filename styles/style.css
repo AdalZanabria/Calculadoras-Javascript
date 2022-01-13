@@ -26,14 +26,6 @@ main {
     background-color: var(--gray);
 }
 
-.card {
-    border: none;
-}
-
-.card-title {
-    margin-bottom: 0;
-}
-
 .icon-container {
     width: 4.5rem;
     height: 4.5rem;
@@ -60,8 +52,4 @@ main {
 
 .bi-circle {
     color: var(--bs-red);
-}
-
-footer p {
-    margin: 0;
 }
