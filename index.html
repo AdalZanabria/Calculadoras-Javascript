@@ -16,7 +16,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
     />
-    <script src="https://kit.fontawesome.com/5021ec46a2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/5021ec46a2.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./styles/style.css" />
 
     <title>Calculadoras JavaScript</title>
@@ -636,28 +639,63 @@
         >
           <div class="calculator-grid container col col-md-4 neumorphism">
             <div class="row output bg-dark bg-gradient border p-2 text-end">
-              <div data-previous-operand class="previous-operand text-white-50 fw-light"></div>
-              <div data-current-operand class="current-operand text-white fw-bold fs-3"></div>
+              <div
+                data-previous-operand
+                class="previous-operand text-white-50 fw-light"
+              ></div>
+              <div
+                data-current-operand
+                class="current-operand text-white fw-bold fs-3"
+              ></div>
             </div>
             <div class="row row-cols-4">
-              <button data-all-clear class="btn btn-danger border fw-bold col-6"> AC </button>
-              <button data-delete class="btn btn-warning border fw-bold col"> DEL </button>
-              <button data-operation class="btn btn-secondary fw-bold border col"> ÷ </button>
-              <button data-number class="btn btn-primary border col"> 1 </button>
-              <button data-number class="btn btn-primary border col"> 2 </button>
-              <button data-number class="btn btn-primary border col"> 3 </button>
-              <button data-operation class="btn btn-secondary fw-bold border col"> * </button>
-              <button data-number class="btn btn-primary border col"> 4 </button>
-              <button data-number class="btn btn-primary border col"> 6 </button>
-              <button data-number class="btn btn-primary border col"> 5 </button>
-              <button data-operation class="btn btn-secondary fw-bold border col"> + </button>
-              <button data-number class="btn btn-primary border col"> 7 </button>
-              <button data-number class="btn btn-primary border col"> 8 </button>
-              <button data-number class="btn btn-primary border col"> 9 </button>
-              <button data-operation class="btn btn-secondary fw-bold border col"> - </button>
-              <button data-number class="btn btn-primary border col"> . </button>
-              <button data-number class="btn btn-primary border col"> 0 </button>
-              <button data-equals class="btn btn-success border fw-bold col-6"> = </button>
+              <button
+                data-all-clear
+                class="btn btn-danger border fw-bold col-6"
+              >
+                AC
+              </button>
+              <button data-delete class="btn btn-warning border fw-bold col">
+                DEL
+              </button>
+              <button
+                data-operation
+                class="btn btn-secondary fw-bold border col"
+              >
+                ÷
+              </button>
+              <button data-number class="btn btn-primary border col">1</button>
+              <button data-number class="btn btn-primary border col">2</button>
+              <button data-number class="btn btn-primary border col">3</button>
+              <button
+                data-operation
+                class="btn btn-secondary fw-bold border col"
+              >
+                *
+              </button>
+              <button data-number class="btn btn-primary border col">4</button>
+              <button data-number class="btn btn-primary border col">6</button>
+              <button data-number class="btn btn-primary border col">5</button>
+              <button
+                data-operation
+                class="btn btn-secondary fw-bold border col"
+              >
+                +
+              </button>
+              <button data-number class="btn btn-primary border col">7</button>
+              <button data-number class="btn btn-primary border col">8</button>
+              <button data-number class="btn btn-primary border col">9</button>
+              <button
+                data-operation
+                class="btn btn-secondary fw-bold border col"
+              >
+                -
+              </button>
+              <button data-number class="btn btn-primary border col">.</button>
+              <button data-number class="btn btn-primary border col">0</button>
+              <button data-equals class="btn btn-success border fw-bold col-6">
+                =
+              </button>
             </div>
           </div>
         </section>
@@ -665,29 +703,75 @@
     </div>
 
     <!--Footer-->
-    <footer
-      class="footer mt-auto d-flex flex-wrap justify-content-between align-items-center p-3 bg-dark"
-    >
-      <div class="col-md-4 d-flex align-items-center">
+    <footer class="footer mt-auto p-3 bg-dark row flex-wrap">
+      <div
+        class="col-md-4 col d-flex flex-column justify-content-center align-items-center align-items-md-start mt-2"
+      >
         <p class="text-light m-0">Adalberto Zanabria Castro, 2022.</p>
+        <p class="text-muted m-0 small">
+          Estos ejercicios fueron realizados como parte de mi certificado en
+          JavaScript.
+        </p>
       </div>
-      <div class="d-flex flex-column justify-content-center align-items-center">
-        <p class="m-0 text-muted text-center small">Este proyecto fue hecho con: </p>
+
+      <div
+        class="col-md-4 cold-flex flex-column justify-content-center align-items-center mt-2"
+      >
+        <p class="m-0 text-muted text-center small">
+          Este proyecto fue hecho con:
+        </p>
         <div class="d-flex justify-content-center align-items-center">
-          <i class="fab fa-html5 mx-2"></i>
-          <i class="fab fa-css3-alt mx-2"></i>
-          <i class="fab fa-js mx-2"></i>
-          <i class="fab fa-bootstrap mx-2"></i>
-          <i class="fas fa-egg mx-2"></i>
+          <span
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="HTML5"
+            class="tt"
+          >
+            <i class="fab fa-html5 mx-2"></i>
+          </span>
+          <span
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="CSS3"
+            class="tt"
+          >
+            <i class="fab fa-css3-alt mx-2"></i>
+          </span>
+          <span
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="JavaScript"
+            class="tt"
+          >
+            <i class="fab fa-js mx-2"></i>
+          </span>
+          <span
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="Bootstrap"
+            class="tt"
+          >
+            <i class="fab fa-bootstrap mx-2"></i>
+          </span>
+          <span
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="Huevos"
+            class="tt"
+          >
+            <i class="fas fa-egg mx-2"></i>
+          </span>
         </div>
       </div>
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3">
-          <a href="https://github.com/AdalZanabria" class="text-muted">
-            <i class="bi bi-github"></i>
-          </a>
-        </li>
-      </ul>
+
+      <div
+        class="col-md-4 col d-flex flex-column justify-content-center align-items-center align-items-md-end mt-2"
+      >
+        <p class="text-light m-0">Github</p>
+        <a href="https://github.com/AdalZanabria" class="text-muted">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
     </footer>
 
     <!--Modal 1-->
@@ -835,5 +919,13 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
   </body>
 </html>
