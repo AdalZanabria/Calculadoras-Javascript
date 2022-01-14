@@ -53,3 +53,7 @@ main {
 .bi-circle {
     color: var(--bs-red);
 }
+
+.output {
+    height: 5rem;
+}
