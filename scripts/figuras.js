@@ -51,6 +51,7 @@ function calcularAreaCuadrado() {
 
 // Triángulo
 function calcularPerimetroTriangulo() {
+    let perimetro;
     const lado1 = document.getElementById("InputTriangulo1");
     const valor1 = Number(lado1.value);
 
@@ -60,18 +61,30 @@ function calcularPerimetroTriangulo() {
     const base = document.getElementById("InputTriangulo3");
     const valorBase = Number(base.value);
 
-    const perimetro = perimetroTriangulo(valor1, valor2, valorBase);
+    if (lado1.value === "" || lado2.value === "" || base.value === "") {
+        perimetro =
+            "Para calcular el perímetro, es necesario ingresar los dos lados y la base del triángulo.";
+    } else {
+        perimetro = perimetroTriangulo(valor1, valor2, valorBase);
+    }
     return perimetro;
 }
 
 function calcularAreaTriangulo() {
+    let area;
     const base = document.getElementById("InputTriangulo3");
     const valorBase = Number(base.value);
 
     const altura = document.getElementById("InputTriangulo4");
     const valorAltura = Number(altura.value);
 
-    const area = areaTriangulo(valorBase, valorAltura);
+    if (base.value === "" || altura.value === "") {
+        area =
+            "Para calcular el área, es necesario ingresar la base y la altura.";
+    } else {
+        area = areaTriangulo(valorBase, valorAltura);
+    }
+
     return area;
 }
 
