@@ -14,7 +14,7 @@ function displayGeometrica() {
 
     const calculadora5 = document.getElementById("calculadoraBasica");
     calculadora5.classList.remove("d-flex");
-    calculadora5.classList.add("d-none"); 
+    calculadora5.classList.add("d-none");
 
     const calculadora1 = document.getElementById("calculadoraGeometrica");
     calculadora1.classList.remove("d-none");
@@ -38,7 +38,8 @@ function displayGeometrica() {
     const title = document.getElementById("headerTitle");
     title.innerText = "Calculadora Geométrica";
     const subtitle = document.getElementById("headerSubtitle");
-    subtitle.innerText = "Primer práctica de JavaScript";
+    subtitle.innerText =
+        "Calcula áreas y perímetros de figuras geométricas básicas";
 }
 
 // Nav Calculadora de Descuentos
@@ -57,7 +58,7 @@ function displayDescuentos() {
 
     const calculadora5 = document.getElementById("calculadoraBasica");
     calculadora5.classList.remove("d-flex");
-    calculadora5.classList.add("d-none"); 
+    calculadora5.classList.add("d-none");
 
     const calculadora2 = document.getElementById("calculadoraDescuentos");
     calculadora2.classList.remove("d-none");
@@ -81,7 +82,7 @@ function displayDescuentos() {
     const title = document.getElementById("headerTitle");
     title.innerText = "Calculadora de Descuentos";
     const subtitle = document.getElementById("headerSubtitle");
-    subtitle.innerText = "Segunda práctica de JavaScript";
+    subtitle.innerText = "Calcula el precio a pagar de productos con descuento";
 }
 
 // Nav Calculadora de Promedios
@@ -100,7 +101,7 @@ function displayPromedios() {
 
     const calculadora5 = document.getElementById("calculadoraBasica");
     calculadora5.classList.remove("d-flex");
-    calculadora5.classList.add("d-none"); 
+    calculadora5.classList.add("d-none");
 
     const calculadora3 = document.getElementById("calculadoraPromedios");
     calculadora3.classList.remove("d-none");
@@ -124,7 +125,8 @@ function displayPromedios() {
     const title = document.getElementById("headerTitle");
     title.innerText = "Calculadora de Promedios";
     const subtitle = document.getElementById("headerSubtitle");
-    subtitle.innerText = "Tercera práctica de JavaScript";
+    subtitle.innerText =
+        "Calcula operaciones básicas de estadistica en base a una lista";
 }
 
 // Calculadora de Descuentos Pills para Ingresar el tipo descuento
@@ -197,7 +199,7 @@ function displaySalarios() {
 
     const calculadora5 = document.getElementById("calculadoraBasica");
     calculadora5.classList.remove("d-flex");
-    calculadora5.classList.add("d-none"); 
+    calculadora5.classList.add("d-none");
 
     const calculadora4 = document.getElementById("calculadoraSalarios");
     calculadora4.classList.remove("d-none");
@@ -221,7 +223,8 @@ function displaySalarios() {
     const title = document.getElementById("headerTitle");
     title.innerText = "Calculadora de Mediana de Salarios";
     const subtitle = document.getElementById("headerSubtitle");
-    subtitle.innerText = "Cuarta práctica de JavaScript";
+    subtitle.innerText =
+        "Calcula la mediana del salario de un porcentaje de personas de una lista";
 }
 
 // Calculadora Básica
@@ -244,7 +247,7 @@ function displayCalculadora() {
 
     const calculadora5 = document.getElementById("calculadoraBasica");
     calculadora5.classList.remove("d-none");
-    calculadora5.classList.add("d-flex");    
+    calculadora5.classList.add("d-flex");
 
     const navGeometrica = document.getElementById("navGeometrica");
     navGeometrica.classList.remove("active");
@@ -264,5 +267,5 @@ function displayCalculadora() {
     const title = document.getElementById("headerTitle");
     title.innerText = "Calculadora Básica";
     const subtitle = document.getElementById("headerSubtitle");
-    subtitle.innerText = "Quinta práctica de JavaScript";
+    subtitle.innerText = "Calculadora básica interactiva";
 }
