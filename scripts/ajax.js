@@ -1,6 +1,7 @@
 const mainContainer = document.querySelector("main");
 const title = document.getElementById("headerTitle");
 const subtitle = document.getElementById("headerSubtitle");
+const welcomeArrow = document.querySelector("#welcomeArrow");
 
 const navGeometrica = document.querySelector("#navGeometrica");
 const navDescuentos = document.querySelector("#navDescuentos");
@@ -12,7 +13,6 @@ const ajax = async (url, src) => {
     try {
         const data = await fetch(url);
         const contenido = await data.text();
-        console.log(contenido);
 
         mainContainer.innerHTML = contenido;
         const script = document.createElement("script");
@@ -29,6 +29,8 @@ navGeometrica.addEventListener("click", () => {
         "../views/calculadoraGeometrica.html",
         "./scripts/calculadoraGeometrica.js"
     );
+    mainContainer.classList.remove("d-none");
+    welcomeArrow.classList.add("d-none");
     title.innerText = "Calculadora Geométrica";
     subtitle.innerText =
         "Calcula áreas y perímetros de figuras geométricas básicas";
@@ -46,6 +48,8 @@ navDescuentos.addEventListener("click", () => {
         "../views/calculadoraDescuentos.html",
         "./scripts/calculadoraDescuentos.js"
     );
+    mainContainer.classList.remove("d-none");
+    welcomeArrow.classList.add("d-none");
     title.innerText = "Calculadora de Descuentos";
     subtitle.innerText = "Calcula el precio a pagar de productos con descuento";
 
@@ -62,6 +66,8 @@ navPromedios.addEventListener("click", () => {
         "../views/calculadoraPromedios.html",
         "./scripts/calculadoraPromedios.js"
     );
+    mainContainer.classList.remove("d-none");
+    welcomeArrow.classList.add("d-none");
     title.innerText = "Calculadora de Promedios";
     subtitle.innerText =
         "Calcula operaciones básicas de estadistica en base a una lista";
@@ -79,6 +85,8 @@ navSalarios.addEventListener("click", () => {
         "../views/calculadoraSalarios.html",
         "./scripts/calculadoraSalarios.js"
     );
+    mainContainer.classList.remove("d-none");
+    welcomeArrow.classList.add("d-none");
     title.innerText = "Calculadora de Mediana de Salarios";
     subtitle.innerText =
         "Calcula la mediana del salario de un porcentaje de personas de una lista";
@@ -93,6 +101,8 @@ navSalarios.addEventListener("click", () => {
 // Calculadora Básica
 navCalculadora.addEventListener("click", () => {
     ajax("../views/calculadoraBasica.html", "./scripts/calculadoraBasica.js");
+    mainContainer.classList.remove("d-none");
+    welcomeArrow.classList.add("d-none");
     title.innerText = "Calculadora Básica";
     subtitle.innerText = "Calculadora básica interactiva";
 

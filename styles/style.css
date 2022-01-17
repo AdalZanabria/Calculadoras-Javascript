@@ -16,6 +16,15 @@ body {
     background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
 }
 
+#welcomeArrow {
+    animation: goUpDown infinite 2s ease-in-out;
+}
+@keyframes goUpDown {
+    50% {
+        transform: translateY(30px);
+    }
+}
+
 main {
     background: var(--gray);
 }
@@ -58,6 +67,11 @@ main {
     height: 5rem;
 }
 
-.fab, .fas {
+.fab,
+.fas {
     color: var(--gray);
+}
+
+footer a {
+    color: var(--bs-cyan);
 }

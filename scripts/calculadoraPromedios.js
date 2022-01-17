@@ -92,10 +92,9 @@ function calcularMediaArmonica(lista) {
 }
 
 //Inputs dinámicos
-const inputsContainer = document.getElementById("inputsContainer");
-const agregarInput = document.getElementById("agregarInput");
-const eliminarInput = document.getElementById("eliminarInput");
+var inputsContainer = document.getElementById("inputsContainer");
 
+var agregarInput = document.getElementById("agregarInput");
 agregarInput.onclick = function () {
     var nuevoInput = document.createElement("input");
     nuevoInput.setAttribute("type", "number");
@@ -106,6 +105,7 @@ agregarInput.onclick = function () {
     inputsContainer.appendChild(nuevoInput);
 };
 
+var eliminarInput = document.getElementById("eliminarInput");
 eliminarInput.onclick = function () {
     var inputTags = inputsContainer.getElementsByTagName("input");
     if (inputTags.length > 2) {

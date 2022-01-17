@@ -51,9 +51,9 @@ function medianaTopPorciento(lista, porciento) {
 var numeroPersona = 2;
 var personas = [];
 
-const personasContainer = document.getElementById("personasContainer");
-const agregarPersona = document.getElementById("agregarPersona");
-const eliminarPersona = document.getElementById("eliminarPersona");
+var personasContainer = document.getElementById("personasContainer");
+var agregarPersona = document.getElementById("agregarPersona");
+var eliminarPersona = document.getElementById("eliminarPersona");
 
 agregarPersona.onclick = function () {
     var personaDiv1 = document.querySelector("#personaDiv1");
