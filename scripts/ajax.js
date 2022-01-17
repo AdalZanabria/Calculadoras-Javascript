@@ -14,6 +14,8 @@ const ajax = async (url, src) => {
         const data = await fetch(url);
         const contenido = await data.text();
 
+        console.log(contenido);
+
         mainContainer.innerHTML = contenido;
         const script = document.createElement("script");
         script.src = src;
