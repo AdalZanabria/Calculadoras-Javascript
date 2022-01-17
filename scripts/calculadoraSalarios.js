@@ -11,6 +11,10 @@ function salariosSorted(lista) {
     }, 0);
 }
 
+function esPar(numero) {
+    return numero % 2 === 0;
+}
+
 // Mediana de salarios
 function medianaSalarios(lista) {
     const mitad = parseInt(lista.length / 2);

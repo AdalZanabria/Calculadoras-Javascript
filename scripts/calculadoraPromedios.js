@@ -13,7 +13,7 @@ function calcularMediaAritmetica(lista) {
 
 //Mediana
 function esPar(numero) {
-        return (numero % 2 === 0);
+    return numero % 2 === 0;
 }
 
 function calcularMediana(lista) {
@@ -132,7 +132,7 @@ ventanaModal3.addEventListener("show.bs.modal", function (event) {
     var tipoPromedio = button.getAttribute("data-bs-tipo");
     var resultado;
 
-    switch (tipoPromedio){
+    switch (tipoPromedio) {
         case "mediaAritmetica":
             resultado = calcularMediaAritmetica(crearArray());
             break;
@@ -146,7 +146,7 @@ ventanaModal3.addEventListener("show.bs.modal", function (event) {
             resultado = calcularModa(crearArray());
             break;
         default:
-            resultado = "Operación no encontrada."
+            resultado = "Operación no encontrada.";
             break;
     }
     // Update the modal's content.

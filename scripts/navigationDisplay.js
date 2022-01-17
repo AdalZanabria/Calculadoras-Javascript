@@ -21,18 +21,15 @@ function displayGeometrica() {
     calculadora1.classList.add("d-flex");
 
     const navDescuentos = document.getElementById("navDescuentos");
-    navDescuentos.classList.remove("active");
-
     const navPromedios = document.getElementById("navPromedios");
-    navPromedios.classList.remove("active");
-
     const navSalarios = document.getElementById("navSalarios");
-    navSalarios.classList.remove("active");
-
     const navCalculadora = document.getElementById("navCalculadora");
-    navCalculadora.classList.remove("active");
-
     const navGeometrica = document.getElementById("navGeometrica");
+
+    navDescuentos.classList.remove("active");
+    navPromedios.classList.remove("active");
+    navSalarios.classList.remove("active");
+    navCalculadora.classList.remove("active");
     navGeometrica.classList.add("active");
 
     const title = document.getElementById("headerTitle");
@@ -65,18 +62,15 @@ function displayDescuentos() {
     calculadora2.classList.add("d-block");
 
     const navPromedios = document.getElementById("navPromedios");
-    navPromedios.classList.remove("active");
-
     const navGeometrica = document.getElementById("navGeometrica");
-    navGeometrica.classList.remove("active");
-
     const navSalarios = document.getElementById("navSalarios");
-    navSalarios.classList.remove("active");
-
     const navCalculadora = document.getElementById("navCalculadora");
-    navCalculadora.classList.remove("active");
-
     const navDescuentos = document.getElementById("navDescuentos");
+
+    navGeometrica.classList.remove("active");
+    navPromedios.classList.remove("active");
+    navSalarios.classList.remove("active");
+    navCalculadora.classList.remove("active");
     navDescuentos.classList.add("active");
 
     const title = document.getElementById("headerTitle");
@@ -108,18 +102,15 @@ function displayPromedios() {
     calculadora3.classList.add("d-block");
 
     const navDescuentos = document.getElementById("navDescuentos");
-    navDescuentos.classList.remove("active");
-
     const navGeometrica = document.getElementById("navGeometrica");
-    navGeometrica.classList.remove("active");
-
     const navSalarios = document.getElementById("navSalarios");
-    navSalarios.classList.remove("active");
-
     const navCalculadora = document.getElementById("navCalculadora");
-    navCalculadora.classList.remove("active");
-
     const navPromedios = document.getElementById("navPromedios");
+
+    navGeometrica.classList.remove("active");
+    navDescuentos.classList.remove("active");
+    navSalarios.classList.remove("active");
+    navCalculadora.classList.remove("active");
     navPromedios.classList.add("active");
 
     const title = document.getElementById("headerTitle");
@@ -127,60 +118,6 @@ function displayPromedios() {
     const subtitle = document.getElementById("headerSubtitle");
     subtitle.innerText =
         "Calcula operaciones básicas de estadistica en base a una lista";
-}
-
-// Calculadora de Descuentos Pills para Ingresar el tipo descuento
-function displayDescuento() {
-    //Pills
-    const cupon = document.getElementById("ingresoCupon");
-    cupon.classList.remove("d-none");
-    cupon.classList.add("d-block");
-    const cuponPill = document.getElementById("menuCupon");
-    cuponPill.classList.add("active");
-
-    const ingresar = document.getElementById("ingresoDescuento");
-    ingresar.classList.remove("d-block");
-    ingresar.classList.add("d-none");
-    const ingresoPill = document.getElementById("menuIngresar");
-    ingresoPill.classList.remove("active");
-
-    //Botones
-    const botonCupon = document.getElementById("botonCupon");
-    botonCupon.removeAttribute("disabled");
-    botonCupon.classList.remove("btn-outline-secondary");
-    botonCupon.classList.add("btn-outline-primary");
-
-    const botonIngreso = document.getElementById("botonIngreso");
-    botonIngreso.setAttribute("disabled", "");
-    botonIngreso.classList.remove("btn-outline-primary");
-    botonIngreso.classList.add("btn-outline-secondary");
-}
-
-// Calculadora de Descuentos usar cupón
-function displayCupon() {
-    //Pills
-    const ingresar = document.getElementById("ingresoDescuento");
-    ingresar.classList.remove("d-none");
-    ingresar.classList.add("d-block");
-    const ingresoPill = document.getElementById("menuIngresar");
-    ingresoPill.classList.add("active");
-
-    const cupon = document.getElementById("ingresoCupon");
-    cupon.classList.remove("d-block");
-    cupon.classList.add("d-none");
-    const cuponPill = document.getElementById("menuCupon");
-    cuponPill.classList.remove("active");
-
-    //Botones
-    const botonIngreso = document.getElementById("botonIngreso");
-    botonIngreso.removeAttribute("disabled");
-    botonIngreso.classList.remove("btn-outline-secondary");
-    botonIngreso.classList.add("btn-outline-primary");
-
-    const botonCupon = document.getElementById("botonCupon");
-    botonCupon.setAttribute("disabled", "");
-    botonCupon.classList.remove("btn-outline-primary");
-    botonCupon.classList.add("btn-outline-secondary");
 }
 
 // Calculadora de Salarios
@@ -206,18 +143,15 @@ function displaySalarios() {
     calculadora4.classList.add("d-block");
 
     const navDescuentos = document.getElementById("navDescuentos");
-    navDescuentos.classList.remove("active");
-
     const navPromedios = document.getElementById("navPromedios");
-    navPromedios.classList.remove("active");
-
     const navGeometrica = document.getElementById("navGeometrica");
-    navGeometrica.classList.remove("active");
-
     const navCalculadora = document.getElementById("navCalculadora");
-    navCalculadora.classList.remove("active");
-
     const navSalarios = document.getElementById("navSalarios");
+
+    navGeometrica.classList.remove("active");
+    navDescuentos.classList.remove("active");
+    navPromedios.classList.remove("active");
+    navCalculadora.classList.remove("active");
     navSalarios.classList.add("active");
 
     const title = document.getElementById("headerTitle");
@@ -250,18 +184,15 @@ function displayCalculadora() {
     calculadora5.classList.add("d-flex");
 
     const navGeometrica = document.getElementById("navGeometrica");
-    navGeometrica.classList.remove("active");
-
     const navDescuentos = document.getElementById("navDescuentos");
-    navDescuentos.classList.remove("active");
-
     const navPromedios = document.getElementById("navPromedios");
-    navPromedios.classList.remove("active");
-
     const navSalarios = document.getElementById("navSalarios");
-    navSalarios.classList.remove("active");
-
     const navCalculadora = document.getElementById("navCalculadora");
+
+    navGeometrica.classList.remove("active");
+    navDescuentos.classList.remove("active");
+    navPromedios.classList.remove("active");
+    navSalarios.classList.remove("active");
     navCalculadora.classList.add("active");
 
     const title = document.getElementById("headerTitle");
