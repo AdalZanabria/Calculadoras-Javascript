@@ -9,7 +9,7 @@ module.exports = {
     entry: "./src/index.js",
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "[name].[contenthas].js",
+        filename: "[name].[contenthash].js",
         assetModuleFilename: "assets/images/[hash][ext][query]",
         clean: true,
     },
@@ -51,7 +51,7 @@ module.exports = {
             filename: "./index.html",
         }),
         new MiniCssExtractPlugin({
-            filename: "assets/[name].[contenthash].css",
+            filename: "styles/[name].[contenthash].css",
         }),
         new CopyPlugin({
             patterns: [
