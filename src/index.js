@@ -5,7 +5,6 @@ import Footer from "./templates/Footer.js";
 (async function App() {
     const main = null || document.getElementById("main");
     const body = null || document.querySelector("body");
-    body.prepend(NavBar);
-    NavBar.after(Header);
+    body.prepend(NavBar, Header);
     body.append(Footer);
 })();

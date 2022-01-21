@@ -1,0 +1,46 @@
+{
+  "name": "calculadoras-javascript",
+  "version": "1.0.0",
+  "description": "Una serie de ejercicios con diversas tecnologías web.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "build:watch": "webpack --mode production --watch",
+    "dev:watch": "webpack --mode development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdalZanabria/Javascript-Practica.git"
+  },
+  "keywords": [
+    "javascript",
+    "css",
+    "html",
+    "bootstrap",
+    "webpack",
+    "SPA"
+  ],
+  "author": "Adalberto Zanabria Castro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdalZanabria/Javascript-Practica/issues"
+  },
+  "homepage": "https://github.com/AdalZanabria/Javascript-Practica#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.10",
+    "@babel/plugin-transform-runtime": "^7.16.10",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "copy-webpack-plugin": "^10.2.1",
+    "css-loader": "^6.5.1",
+    "css-minimizer-webpack-plugin": "^3.4.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.5.2",
+    "terser-webpack-plugin": "^5.3.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
