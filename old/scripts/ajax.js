@@ -28,7 +28,7 @@ const ajax = async (url, src) => {
 // Calculadora Geométrica
 navGeometrica.addEventListener("click", () => {
     ajax(
-        "../views/calculadoraGeometrica.html",
+        "./views/calculadoraGeometrica.html",
         "./scripts/calculadoraGeometrica.js"
     );
     mainContainer.classList.remove("d-none");
@@ -47,7 +47,7 @@ navGeometrica.addEventListener("click", () => {
 // Calculadora de Descuentos
 navDescuentos.addEventListener("click", () => {
     ajax(
-        "../views/calculadoraDescuentos.html",
+        "./views/calculadoraDescuentos.html",
         "./scripts/calculadoraDescuentos.js"
     );
     mainContainer.classList.remove("d-none");
@@ -65,7 +65,7 @@ navDescuentos.addEventListener("click", () => {
 // Calculadora de Promedios
 navPromedios.addEventListener("click", () => {
     ajax(
-        "../views/calculadoraPromedios.html",
+        "./views/calculadoraPromedios.html",
         "./scripts/calculadoraPromedios.js"
     );
     mainContainer.classList.remove("d-none");
@@ -84,7 +84,7 @@ navPromedios.addEventListener("click", () => {
 // Calculadora de Salarios
 navSalarios.addEventListener("click", () => {
     ajax(
-        "../views/calculadoraSalarios.html",
+        "./views/calculadoraSalarios.html",
         "./scripts/calculadoraSalarios.js"
     );
     mainContainer.classList.remove("d-none");
@@ -102,7 +102,7 @@ navSalarios.addEventListener("click", () => {
 
 // Calculadora Básica
 navCalculadora.addEventListener("click", () => {
-    ajax("../views/calculadoraBasica.html", "./scripts/calculadoraBasica.js");
+    ajax("./views/calculadoraBasica.html", "./scripts/calculadoraBasica.js");
     mainContainer.classList.remove("d-none");
     welcomeArrow.classList.add("d-none");
     title.innerText = "Calculadora Básica";
