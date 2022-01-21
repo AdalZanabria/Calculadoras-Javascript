@@ -1,7 +1,5 @@
-const Footer = () => {
+const Footer = async () => {
     const view = `
-    <!--Footer-->
-    <footer class="footer mt-auto p-3 bg-dark">
         <div class="row">
             <div
                 class="col-md-4 col-12 d-flex flex-column justify-content-center align-items-center align-items-md-start mt-2"
@@ -87,7 +85,6 @@ const Footer = () => {
                 </a>
             </div>
         </div>
-    </footer>
 
     <!--Modal 5-->
         <div

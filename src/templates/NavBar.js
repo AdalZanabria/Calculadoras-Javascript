@@ -1,7 +1,5 @@
 const NavBar = async () => {
     const view = `
-    <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-auto shadow">
             <div class="container-fluid">
                 <a class="navbar-brand border-end border-light px-3" href="#">
                     <i class="bi bi-calculator px-2"></i>
@@ -69,7 +67,6 @@ const NavBar = async () => {
                     </ul>
                 </div>
             </div>
-        </nav>
         `;
 
     return view;

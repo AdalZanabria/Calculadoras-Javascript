@@ -1,4 +1,4 @@
-const CalculadoraGeometrica = () => {
+const CalculadoraGeometrica = async () => {
     const view = `
     <!--Calculadora Geométrica-->
 <section class="row mx-auto" id="calculadoraGeometrica">
@@ -283,7 +283,7 @@ const CalculadoraGeometrica = () => {
 };
 export default CalculadoraGeometrica;
 
-// Fórmulas
+// Fórmulas await formulas?
 
 // Código del cuadrado
 function perimetroCuadrado(lado) {
