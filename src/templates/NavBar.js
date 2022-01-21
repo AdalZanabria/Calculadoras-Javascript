@@ -1,4 +1,4 @@
-const NavBar = () => {
+const NavBar = async () => {
     const view = `
     <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-auto shadow">
@@ -75,11 +75,3 @@ const NavBar = () => {
     return view;
 };
 export default NavBar;
-
-/*
-const navBrand = document.querySelector(".navbar-brand");
-
-navBrand.addEventListener('click', _ => {
-    location.reload();
-});
-*/
