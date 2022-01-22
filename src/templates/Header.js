@@ -1,9 +1,5 @@
 const Header = () => {
     const view = `
-    <!--Header-->
-            <header
-                class="d-flex flex-column text-light justify-content-center align-items-center"
-            >
                 <i
                     class="fas fa-angle-double-up text-center fs-1 mb-4"
                     id="welcomeArrow"
@@ -13,7 +9,6 @@ const Header = () => {
                 <p class="lead text-center" id="headerSubtitle">
                     Selecciona un tipo de calculadora desde el menu superior
                 </p>
-            </header>
             `;
 
     return view;

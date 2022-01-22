@@ -106,7 +106,7 @@ const Footer = async () => {
                     </div>
                     <div class="modal-body">
                         <img
-                            src="./images/diploma-javascript.jpg"
+                            src="./assets/images/diploma-javascript.jpg"
                             alt="Diploma de certificado"
                             class="img-fluid"
                         />

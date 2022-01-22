@@ -22,13 +22,13 @@ module.exports = {
             "@images": path.resolve(__dirname, "./src/assets/images/"),
         },
     },
-    module : {
+    module: {
         rules: [
             {
                 test: /\.m?js$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
-                    loader: 'babel-loader',
+                    loader: "babel-loader",
                 },
             },
             {
@@ -38,8 +38,8 @@ module.exports = {
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: "asset/resource",
-            }
-        ]
+            },
+        ],
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -58,10 +58,13 @@ module.exports = {
                 },
             ],
         }),
-
     ],
     optimization: {
         minimize: true,
         minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
+    },
+    watchOptions: {
+        poll: true,
+        ignored: /node_modules/,
     },
 };
