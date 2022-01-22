@@ -1,4 +1,4 @@
-const NavBar = async () => {
+const NavBar = () => {
     const view = `
             <div class="container-fluid">
                 <a class="navbar-brand border-end border-light px-3" href="#">

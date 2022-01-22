@@ -1,4 +1,4 @@
-const Footer = async () => {
+const Footer = () => {
     const view = `
         <div class="row">
             <div

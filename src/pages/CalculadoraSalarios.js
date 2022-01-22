@@ -1,4 +1,4 @@
-const CalculadoraSalarios = () => {
+const CalculadoraSalarios = async () => {
     const view = `
     <!--Calculadora de Salarios-->
 <section class="row mx-auto" id="calculadoraSalarios">

@@ -20,13 +20,15 @@ module.exports = {
             "@templates": path.resolve(__dirname, "./src/templates/"),
             "@styles": path.resolve(__dirname, "./src/styles/"),
             "@images": path.resolve(__dirname, "./src/assets/images/"),
+            "@pages": path.resolve(__dirname, "./src/pages/"),
+            "@routes": path.resolve(__dirname, "./src/routes/"),
         },
     },
     module: {
         rules: [
             {
                 test: /\.m?js$/,
-                exclude: /(node_modules|bower_components)/,
+                exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",
                 },
