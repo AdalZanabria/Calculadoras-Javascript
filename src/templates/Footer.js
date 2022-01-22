@@ -64,10 +64,10 @@ const Footer = () => {
                     <span
                         data-bs-toggle="tooltip"
                         data-bs-placement="top"
-                        title="Ajax con Fetch API"
+                        title="Ajax"
                         class="tt"
                     >
-                        <i class="fas fa-bone mx-2"></i>
+                        <i class="fas fa-sync-alt mx-2"></i>
                     </span>
                 </div>
             </div>
