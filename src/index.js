@@ -11,7 +11,9 @@ import FuncionesCalculadoraDescuentos from "./scripts/FuncionesCalculadoraDescue
 import CalculadoraPromedios from "./pages/CalculadoraPromedios.js";
 import FuncionesCalculadoraPromedio from "./scripts/FuncionesCalculadoraPromedios";
 import CalculadoraSalarios from "./pages/CalculadoraSalarios.js";
+import FuncionesCalculadoraSalarios from "./scripts/FuncionesCalculadoraSalarios";
 import CalculadoraBasica from "./pages/CalculadoraBasica.js";
+import FuncionesCalculadoraBasica from "./scripts/FuncionesCalculadoraBasica";
 
 const mainContainer = document.querySelector("#main");
 
@@ -47,9 +49,7 @@ const navReload = () => {
 // Router
 const routes = async (view, model) => {
     try {
-        console.log(view);
         mainContainer.innerHTML = await view;
-        console.log(model);
         await model();
     } catch (error) {
         console.log("Error de función async: ", error);
@@ -115,5 +115,36 @@ const NavRoutes = () => {
         navSalarios.classList.remove("active");
         navCalculadora.classList.remove("active");
         navPromedios.classList.add("active");
+    });
+    // Calculadora de Salarios
+    navSalarios.addEventListener("click", () => {
+        routes(CalculadoraSalarios(), FuncionesCalculadoraSalarios);
+
+        mainContainer.classList.remove("d-none");
+        welcomeArrow.classList.add("d-none");
+        title.innerText = "Calculadora de Mediana de Salarios";
+        subtitle.innerText =
+            "Calcula la mediana del salario de un porcentaje de personas de una lista";
+
+        navGeometrica.classList.remove("active");
+        navDescuentos.classList.remove("active");
+        navPromedios.classList.remove("active");
+        navCalculadora.classList.remove("active");
+        navSalarios.classList.add("active");
+    });
+    // Calculadora Básica
+    navCalculadora.addEventListener("click", () => {
+        routes(CalculadoraBasica(), FuncionesCalculadoraBasica);
+
+        mainContainer.classList.remove("d-none");
+        welcomeArrow.classList.add("d-none");
+        title.innerText = "Calculadora Básica";
+        subtitle.innerText = "Calculadora básica interactiva";
+
+        navGeometrica.classList.remove("active");
+        navDescuentos.classList.remove("active");
+        navPromedios.classList.remove("active");
+        navSalarios.classList.remove("active");
+        navCalculadora.classList.add("active");
     });
 };
