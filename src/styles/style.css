@@ -67,9 +67,12 @@ main {
     height: 5rem;
 }
 
-.fab,
-.fas {
+.tt {
     color: var(--gray);
+}
+
+.si {
+    filter: invert(98%) sepia(2%) saturate(3183%) hue-rotate(186deg) brightness(100%) contrast(91%);
 }
 
 footer a {

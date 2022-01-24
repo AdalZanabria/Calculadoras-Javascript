@@ -1,5 +1,5 @@
 const Footer = () => {
-    const view = `
+  const view = `
         <div class="row">
             <div
                 class="col-md-4 col-12 d-flex flex-column justify-content-center align-items-center align-items-md-start mt-2"
@@ -33,41 +33,57 @@ const Footer = () => {
                         data-bs-toggle="tooltip"
                         data-bs-placement="top"
                         title="HTML5"
-                        class="tt"
+                        class="tt mx-2"
                     >
-                        <i class="fab fa-html5 mx-2"></i>
+                        <i class="fab fa-html5"></i>
                     </span>
                     <span
                         data-bs-toggle="tooltip"
                         data-bs-placement="top"
                         title="CSS3"
-                        class="tt"
+                        class="tt mx-2"
                     >
-                        <i class="fab fa-css3-alt mx-2"></i>
+                        <i class="fab fa-css3-alt"></i>
                     </span>
                     <span
                         data-bs-toggle="tooltip"
                         data-bs-placement="top"
                         title="JavaScript"
-                        class="tt"
+                        class="tt mx-2"
                     >
-                        <i class="fab fa-js mx-2"></i>
+                        <i class="fab fa-js"></i>
                     </span>
                     <span
                         data-bs-toggle="tooltip"
                         data-bs-placement="top"
                         title="Bootstrap"
-                        class="tt"
+                        class="tt mx-2"
                     >
-                        <i class="fab fa-bootstrap mx-2"></i>
+                        <i class="fab fa-bootstrap"></i>
                     </span>
                     <span
                         data-bs-toggle="tooltip"
                         data-bs-placement="top"
                         title="Ajax"
-                        class="tt"
+                        class="tt mx-2"
                     >
-                        <i class="fas fa-sync-alt mx-2"></i>
+                        <i class="fas fa-sync-alt"></i>
+                    </span>
+                    <span
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="Webpack"
+                        class="tt mx-2"
+                    >
+                    <img class="si" height="16" width="16" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/webpack.svg">
+                    </span>
+                    <span
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="Babel"
+                        class="tt mx-2"
+                    >
+                    <img class="si" height="16" width="16" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/babel.svg" />
                     </span>
                 </div>
             </div>
@@ -81,7 +97,7 @@ const Footer = () => {
                     class="text-light"
                     target="_blank"
                 >
-                    <i class="bi bi-github"></i>
+                    <i class="fab fa-github"></i>
                 </a>
             </div>
         </div>
@@ -125,6 +141,6 @@ const Footer = () => {
         </div>
     `;
 
-    return view;
+  return view;
 };
 export default Footer;
