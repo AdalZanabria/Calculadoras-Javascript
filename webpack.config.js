@@ -4,7 +4,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
-const FaviconWebpackPlugin = require("favicons-webpack-plugin");
+const WebpackFavicons = require('webpack-favicons');
+
 
 module.exports = {
     entry: "./src/index.js",
@@ -61,10 +62,16 @@ module.exports = {
                 },
             ],
         }),
-        new FaviconWebpackPlugin({
-            logo: "./src/assets/images/favicon.svg",
-            prefix: "assets/images/",
-        }),
+        new WebpackFavicons({
+            src: './src/assets/images/favicon.svg',
+            path: 'assets/images',
+            background: '#000',
+            theme_color: '#000',
+            icons: {
+              favicons: true
+            }
+          }),
+        
     ],
     optimization: {
         minimize: true,
