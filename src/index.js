@@ -1,6 +1,6 @@
-import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "@styles/style.css";
+import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 import bootstrap from "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import NavBar from "@templates/NavBar.js";
 import Footer from "@templates/Footer.js";
@@ -22,7 +22,7 @@ const mainContainer = document.querySelector("#main");
 
 (async function App() {
     const nav = null || document.querySelector(".navbar");
-    const footer = null || document.querySelector(".footer");
+    const footer = null || document.querySelector("footer");
     const header = null || document.querySelector("header");
     nav.innerHTML = await NavBar();
     navReload();
@@ -63,7 +63,6 @@ const NavRoutes = () => {
     // DOM consts
     const title = document.getElementById("headerTitle");
     const subtitle = document.getElementById("headerSubtitle");
-    const welcomeArrow = document.querySelector("#welcomeArrow");
     // NavBar consts
     const navGeometrica = document.querySelector("#navGeometrica");
     const navDescuentos = document.querySelector("#navDescuentos");
@@ -75,6 +74,7 @@ const NavRoutes = () => {
     navGeometrica.addEventListener("click", () => {
         routes(CalculadoraGeometrica(), FuncionesCalculadoraGeometrica);
 
+        const welcomeArrow = document.getElementById("welcomeArrow");
         mainContainer.classList.remove("d-none");
         welcomeArrow.classList.add("d-none");
         title.innerText = "Calculadora Geométrica";
@@ -91,6 +91,7 @@ const NavRoutes = () => {
     navDescuentos.addEventListener("click", () => {
         routes(CalculadoraDescuentos(), FuncionesCalculadoraDescuentos);
 
+        const welcomeArrow = document.getElementById("welcomeArrow");
         mainContainer.classList.remove("d-none");
         welcomeArrow.classList.add("d-none");
         title.innerText = "Calculadora de Descuentos";
@@ -107,6 +108,7 @@ const NavRoutes = () => {
     navPromedios.addEventListener("click", () => {
         routes(CalculadoraPromedios(), FuncionesCalculadoraPromedio);
 
+        const welcomeArrow = document.getElementById("welcomeArrow");
         mainContainer.classList.remove("d-none");
         welcomeArrow.classList.add("d-none");
         title.innerText = "Calculadora de Promedios";
@@ -123,6 +125,7 @@ const NavRoutes = () => {
     navSalarios.addEventListener("click", () => {
         routes(CalculadoraSalarios(), FuncionesCalculadoraSalarios);
 
+        const welcomeArrow = document.getElementById("welcomeArrow");
         mainContainer.classList.remove("d-none");
         welcomeArrow.classList.add("d-none");
         title.innerText = "Calculadora de Mediana de Salarios";
@@ -139,6 +142,7 @@ const NavRoutes = () => {
     navCalculadora.addEventListener("click", () => {
         routes(CalculadoraBasica(), FuncionesCalculadoraBasica);
 
+        const welcomeArrow = document.getElementById("welcomeArrow");
         mainContainer.classList.remove("d-none");
         welcomeArrow.classList.add("d-none");
         title.innerText = "Calculadora Básica";
