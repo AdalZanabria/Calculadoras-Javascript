@@ -1,5 +1,5 @@
 const Footer = () => {
-  const view = `
+    const view = `
         <div class="row">
             <div
                 class="col-md-4 col-12 d-flex flex-column justify-content-center align-items-center align-items-md-start mt-2"
@@ -110,7 +110,7 @@ const Footer = () => {
             aria-labelledby="ventanaModal5"
             aria-hidden="true"
         >
-            <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button
@@ -141,6 +141,6 @@ const Footer = () => {
         </div>
     `;
 
-  return view;
+    return view;
 };
 export default Footer;

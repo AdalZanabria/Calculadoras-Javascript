@@ -10,14 +10,14 @@ const NavBar = () => {
                     class="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02"
-                    aria-controls="navbarTogglerDemo02"
+                    data-bs-target="#navbarToggler"
+                    aria-controls="navbarToggler"
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
                     <i class="bi bi-list"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <div class="collapse navbar-collapse" id="navbarToggler">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a
