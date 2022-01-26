@@ -78,6 +78,8 @@ const NavRoutes = () => {
         routes(CalculadoraGeometrica(), FuncionesCalculadoraGeometrica);
 
         const welcomeArrow = document.getElementById("welcomeArrow");
+        const certificados = document.querySelector("#certificados");
+        certificados.classList.add("d-none");
         mainContainer.classList.remove("d-none");
         welcomeArrow.classList.add("d-none");
         title.innerText = "Calculadora Geométrica";
@@ -95,6 +97,8 @@ const NavRoutes = () => {
         routes(CalculadoraDescuentos(), FuncionesCalculadoraDescuentos);
 
         const welcomeArrow = document.getElementById("welcomeArrow");
+        const certificados = document.querySelector("#certificados");
+        certificados.classList.add("d-none");
         mainContainer.classList.remove("d-none");
         welcomeArrow.classList.add("d-none");
         title.innerText = "Calculadora de Descuentos";
@@ -112,6 +116,8 @@ const NavRoutes = () => {
         routes(CalculadoraPromedios(), FuncionesCalculadoraPromedio);
 
         const welcomeArrow = document.getElementById("welcomeArrow");
+        const certificados = document.querySelector("#certificados");
+        certificados.classList.add("d-none");
         mainContainer.classList.remove("d-none");
         welcomeArrow.classList.add("d-none");
         title.innerText = "Calculadora de Promedios";
@@ -129,6 +135,8 @@ const NavRoutes = () => {
         routes(CalculadoraSalarios(), FuncionesCalculadoraSalarios);
 
         const welcomeArrow = document.getElementById("welcomeArrow");
+        const certificados = document.querySelector("#certificados");
+        certificados.classList.add("d-none");
         mainContainer.classList.remove("d-none");
         welcomeArrow.classList.add("d-none");
         title.innerText = "Calculadora de Mediana de Salarios";
@@ -146,6 +154,8 @@ const NavRoutes = () => {
         routes(CalculadoraBasica(), FuncionesCalculadoraBasica);
 
         const welcomeArrow = document.getElementById("welcomeArrow");
+        const certificados = document.querySelector("#certificados");
+        certificados.classList.add("d-none");
         mainContainer.classList.remove("d-none");
         welcomeArrow.classList.add("d-none");
         title.innerText = "Calculadora Básica";

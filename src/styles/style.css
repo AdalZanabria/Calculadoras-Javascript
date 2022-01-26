@@ -71,8 +71,22 @@ main {
     color: var(--gray);
 }
 
+.welcomeIcon {
+    font-size: 4rem;
+    color: var(--gray);
+}
+
 .si {
     filter: invert(98%) sepia(2%) saturate(3183%) hue-rotate(186deg) brightness(100%) contrast(91%);
+}
+
+#certificados a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.certIcons:hover {
+    animation: goUpDown infinite 2s ease-in-out;
 }
 
 footer a {
