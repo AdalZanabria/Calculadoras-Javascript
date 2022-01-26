@@ -86,7 +86,12 @@ main {
 }
 
 .certIcons:hover {
-    animation: goUpDown infinite 2s ease-in-out;
+    animation: bounce infinite 1.5s ease-in-out;
+}
+@keyframes bounce {
+    50% {
+        transform: translateY(10px);
+    }
 }
 
 footer a {

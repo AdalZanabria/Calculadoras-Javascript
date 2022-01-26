@@ -20,6 +20,7 @@ import CalculadoraSalarios from "./pages/CalculadoraSalarios.js";
 import FuncionesCalculadoraSalarios from "./scripts/FuncionesCalculadoraSalarios";
 import CalculadoraBasica from "./pages/CalculadoraBasica.js";
 import FuncionesCalculadoraBasica from "./scripts/FuncionesCalculadoraBasica";
+import FuncionesHeader from "./scripts/FuncionesHeader";
 
 const mainContainer = document.querySelector("#main");
 
@@ -30,6 +31,7 @@ const mainContainer = document.querySelector("#main");
     nav.innerHTML = await NavBar();
     navReload();
     header.innerHTML = await Header();
+    await FuncionesHeader();
     NavRoutes();
     footer.innerHTML = await Footer();
     toolTips();

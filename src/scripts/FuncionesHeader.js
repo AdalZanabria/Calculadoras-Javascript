@@ -36,7 +36,6 @@ const FuncionesHeader = () => {
         modalTitle.textContent = "Presiona las flechas laterales para ver mas certificados";
         modalBody.innerHTML = imgUrl;
     });
-
 }
 
 export default FuncionesHeader;

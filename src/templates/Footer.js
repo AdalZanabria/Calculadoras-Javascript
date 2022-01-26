@@ -126,7 +126,7 @@ const Footer = () => {
                     </div>
                     <div class="modal-body">
                         <img
-                            src="./assets/images/diploma-javascript.jpg"
+                            src="./assets/images/javascript-practico.png"
                             alt="Diploma de certificado"
                             class="img-fluid"
                         />
