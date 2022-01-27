@@ -53,39 +53,28 @@ const Header = () => {
                 </div>
 
                 <!--Modal6-->
-        <div
-        class="modal fade"
-        id="ventanaModal6"
-        tabindex="-1"
-        aria-labelledby="ventanaModal6"
-        aria-hidden="true"
-    >
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                    ></button>
+                <div
+                class="modal fade"
+                id="ventanaModal6"
+                tabindex="-1"
+                aria-labelledby="ventanaModal6"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title text-dark" id="ventanaModal6Label">Modal title</h6>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body">...</div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <!--Insertar con innerhtml-->
-                </div>
-                <div class="modal-footer">
-                    <button
-                        type="button"
-                        class="btn btn-primary"
-                        data-bs-dismiss="modal"
-                    >
-                        Volver
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-                
+            </div> 
             `;
 
     return view;

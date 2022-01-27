@@ -1,4 +1,3 @@
-const FuncionesHeader = () => {
     // Modal
     var ventanaModal6 = document.getElementById("ventanaModal6");
     ventanaModal6.addEventListener("show.bs.modal", function (event) {
@@ -9,13 +8,13 @@ const FuncionesHeader = () => {
 
         switch (tipoCert) {
             case "HTMLCSS":
-                var imgUrl = ``;
+                var imgUrl = `<p>HTML y CSS</p>`;
                 break;
             case "javascript":
-                var imgUrl = ``;
+                var imgUrl = `<p>JavaScript</p>`;
                 break;
             case "webpack":
-                var imgUrl = ``;
+                var imgUrl = `<p>Webpack</p>`;
                 break;
             case "SPA":
                 var imgUrl = `
@@ -36,6 +35,3 @@ const FuncionesHeader = () => {
         modalTitle.textContent = "Presiona las flechas laterales para ver mas certificados";
         modalBody.innerHTML = imgUrl;
     });
-}
-
-export default FuncionesHeader;

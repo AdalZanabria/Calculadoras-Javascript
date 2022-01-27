@@ -10,13 +10,7 @@ const Footer = () => {
                 <p
                     class="text-center text-md-start text-light fw-light m-0 small"
                 >
-                    Este sitio fue creado como parte de mi
-                    <a
-                        href="#!"
-                        data-bs-toggle="modal"
-                        data-bs-target="#ventanaModal5"
-                        >certificado en JavaScript.</a
-                    >
+                    adal.zanabria@gmail.com
                 </p>
             </div>
 
@@ -103,44 +97,6 @@ const Footer = () => {
                 >
                     <i class="fab fa-github"></i>
                 </a>
-            </div>
-        </div>
-
-    <!--Modal 5-->
-        <div
-            class="modal fade"
-            id="ventanaModal5"
-            tabindex="-1"
-            aria-labelledby="ventanaModal5"
-            aria-hidden="true"
-        >
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                        ></button>
-                    </div>
-                    <div class="modal-body">
-                        <img
-                            src="./assets/images/javascript-practico.png"
-                            alt="Diploma de certificado"
-                            class="img-fluid"
-                        />
-                    </div>
-                    <div class="modal-footer">
-                        <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-bs-dismiss="modal"
-                        >
-                            Volver
-                        </button>
-                    </div>
-                </div>
             </div>
         </div>
     `;
