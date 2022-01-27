@@ -191,13 +191,13 @@ ventanaModal6.addEventListener("show.bs.modal", function (event) {
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img src="./assets/images/frontend-developer-practico.png" class="d-block w-100" alt="...">
+                    <img src="./assets/images/frontend-developer-practico.png" class="d-block w-100" alt="Certificado de Frontend Práctico">
                     </div>
                     <div class="carousel-item">
-                    <img src="./assets/images/frontend-developer.png" class="d-block w-100" alt="...">
+                    <img src="./assets/images/frontend-developer.png" class="d-block w-100" alt="Certificado de Frontend">
                     </div>
                     <div class="carousel-item">
-                    <img src="./assets/images/html-css.png" class="d-block w-100" alt="...">
+                    <img src="./assets/images/html-css.png" class="d-block w-100" alt="Certificado en HTML y CSS">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselHTMLCSS" data-bs-slide="prev">
@@ -223,19 +223,19 @@ ventanaModal6.addEventListener("show.bs.modal", function (event) {
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img src="./assets/images/javascript-practico.png" class="d-block w-100" alt="...">
+                    <img src="./assets/images/javascript-practico.png" class="d-block w-100" alt="Certificado en Javascript Práctico">
                     </div>
                     <div class="carousel-item">
-                    <img src="./assets/images/ecmascript-6.png" class="d-block w-100" alt="...">
+                    <img src="./assets/images/ecmascript-6.png" class="d-block w-100" alt="Certificado en ECMAScript 6+">
                     </div>
                     <div class="carousel-item">
-                    <img src="./assets/images/javascript-basico.png" class="d-block w-100" alt="...">
+                    <img src="./assets/images/javascript-basico.png" class="d-block w-100" alt="Certificado en JavaScript Básico">
                     </div>
                     <div class="carousel-item">
-                    <img src="./assets/images/asincronismo-js.png" class="d-block w-100" alt="...">
+                    <img src="./assets/images/asincronismo-js.png" class="d-block w-100" alt="Certificado en Asincronismo en Javascript">
                     </div>
                     <div class="carousel-item">
-                    <img src="./assets/images/javascript-scope.png" class="d-block w-100" alt="...">
+                    <img src="./assets/images/javascript-scope.png" class="d-block w-100" alt="Certificado en Clossures y Scope en Javascript">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselJavascript" data-bs-slide="prev">
@@ -258,10 +258,10 @@ ventanaModal6.addEventListener("show.bs.modal", function (event) {
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img src="./assets/images/webpack.png" class="d-block w-100" alt="...">
+                    <img src="./assets/images/webpack.png" class="d-block w-100" alt="Certificado en Webpack">
                     </div>
                     <div class="carousel-item">
-                    <img src="./assets/images/npm.png" class="d-block w-100" alt="...">
+                    <img src="./assets/images/npm.png" class="d-block w-100" alt="Certificado en NPM">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselWebpack" data-bs-slide="prev">
@@ -281,6 +281,7 @@ ventanaModal6.addEventListener("show.bs.modal", function (event) {
             src="./assets/images/spa-javascript.png"
             alt="Diploma de certificado"
             class="img-fluid"
+            alt="Certificado en NPM"
         />`;
             break;
         default:
