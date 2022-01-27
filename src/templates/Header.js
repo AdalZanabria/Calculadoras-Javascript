@@ -11,7 +11,7 @@ const Header = () => {
                 </p>
                 
                 <div class="container d-flex flex-column align-items-center mt-4" id="certificados">
-                    <vr>
+                    <hr class="w-100 mb-4">
                     <p class="text-center">Este sitio fue creado como parte de mis siguientes certificados:</p>
                     <p class="small text-center">Haz click en cada categoría para ver los certificados</p>
                     <div class="row mt-4">

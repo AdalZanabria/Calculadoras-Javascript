@@ -77,7 +77,8 @@ main {
 }
 
 .si {
-    filter: invert(98%) sepia(2%) saturate(3183%) hue-rotate(186deg) brightness(100%) contrast(91%);
+    filter: invert(98%) sepia(2%) saturate(3183%) hue-rotate(186deg)
+        brightness(100%) contrast(91%);
 }
 
 #certificados a {
@@ -90,8 +91,31 @@ main {
 }
 @keyframes bounce {
     50% {
-        transform: translateY(10px);
+        transform: translateY(-10px);
     }
+}
+
+hr {
+    opacity: 0.5;
+}
+
+hr:not([size]) {
+    height: 1.5px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        var(--gray),
+        transparent
+    );
+}
+
+hr:before {
+    /* background-image: linear-gradient(
+        to right,
+        transparent,
+        rgb(48, 49, 51),
+        transparent
+    ); */
 }
 
 footer a {
