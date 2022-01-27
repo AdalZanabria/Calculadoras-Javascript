@@ -1,7 +1,7 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "@styles/style.css";
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
-import bootstrap from "../node_modules/bootstrap/dist/js/bootstrap.bundle";
+import bootstrap, { Modal } from "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "@fortawesome/fontawesome-free/js/fontawesome";
 import "@fortawesome/fontawesome-free/js/brands";
 import "@fortawesome/fontawesome-free/js/solid";
@@ -31,6 +31,7 @@ const mainContainer = document.querySelector("#main");
     navReload();
     header.innerHTML = await Header();
     NavRoutes();
+    ModalHeader();
     footer.innerHTML = await Footer();
     toolTips();
 })();
@@ -78,6 +79,8 @@ const NavRoutes = () => {
         routes(CalculadoraGeometrica(), FuncionesCalculadoraGeometrica);
 
         const welcomeArrow = document.getElementById("welcomeArrow");
+        const certificados = document.querySelector("#certificados");
+        certificados.classList.add("d-none");
         mainContainer.classList.remove("d-none");
         welcomeArrow.classList.add("d-none");
         title.innerText = "Calculadora Geométrica";
@@ -95,6 +98,8 @@ const NavRoutes = () => {
         routes(CalculadoraDescuentos(), FuncionesCalculadoraDescuentos);
 
         const welcomeArrow = document.getElementById("welcomeArrow");
+        const certificados = document.querySelector("#certificados");
+        certificados.classList.add("d-none");
         mainContainer.classList.remove("d-none");
         welcomeArrow.classList.add("d-none");
         title.innerText = "Calculadora de Descuentos";
@@ -112,6 +117,8 @@ const NavRoutes = () => {
         routes(CalculadoraPromedios(), FuncionesCalculadoraPromedio);
 
         const welcomeArrow = document.getElementById("welcomeArrow");
+        const certificados = document.querySelector("#certificados");
+        certificados.classList.add("d-none");
         mainContainer.classList.remove("d-none");
         welcomeArrow.classList.add("d-none");
         title.innerText = "Calculadora de Promedios";
@@ -129,6 +136,8 @@ const NavRoutes = () => {
         routes(CalculadoraSalarios(), FuncionesCalculadoraSalarios);
 
         const welcomeArrow = document.getElementById("welcomeArrow");
+        const certificados = document.querySelector("#certificados");
+        certificados.classList.add("d-none");
         mainContainer.classList.remove("d-none");
         welcomeArrow.classList.add("d-none");
         title.innerText = "Calculadora de Mediana de Salarios";
@@ -146,6 +155,8 @@ const NavRoutes = () => {
         routes(CalculadoraBasica(), FuncionesCalculadoraBasica);
 
         const welcomeArrow = document.getElementById("welcomeArrow");
+        const certificados = document.querySelector("#certificados");
+        certificados.classList.add("d-none");
         mainContainer.classList.remove("d-none");
         welcomeArrow.classList.add("d-none");
         title.innerText = "Calculadora Básica";
@@ -157,4 +168,135 @@ const NavRoutes = () => {
         navSalarios.classList.remove("active");
         navCalculadora.classList.add("active");
     });
+};
+
+// Modal Header
+const ModalHeader = () => {
+// Modal
+var ventanaModal6 = document.getElementById("ventanaModal6");
+ventanaModal6.addEventListener("show.bs.modal", function (event) {
+    // Button that triggered the modal
+    var button = event.relatedTarget;
+    // Extract info from data-bs-* attributes
+    var tipoCert = button.getAttribute("data-bs-cert");
+
+    switch (tipoCert) {
+        case "HTMLCSS":
+            var imgUrl = `
+            <div id="carouselHTMLCSS" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselHTMLCSS" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselHTMLCSS" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselHTMLCSS" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./assets/images/frontend-developer-practico.png" class="d-block w-100" alt="Certificado de Frontend Práctico">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assets/images/frontend-developer.png" class="d-block w-100" alt="Certificado de Frontend">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assets/images/html-css.png" class="d-block w-100" alt="Certificado en HTML y CSS">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHTMLCSS" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHTMLCSS" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        `;
+            break;
+        case "javascript":
+            var imgUrl = `
+            <div id="carouselJavascript" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselJavascript" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselJavascript" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselJavascript" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselJavascript" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselJavascript" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./assets/images/javascript-practico.png" class="d-block w-100" alt="Certificado en Javascript Práctico">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assets/images/ecmascript-6.png" class="d-block w-100" alt="Certificado en ECMAScript 6+">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assets/images/javascript-basico.png" class="d-block w-100" alt="Certificado en JavaScript Básico">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assets/images/asincronismo-js.png" class="d-block w-100" alt="Certificado en Asincronismo en Javascript">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assets/images/javascript-scope.png" class="d-block w-100" alt="Certificado en Clossures y Scope en Javascript">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselJavascript" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselJavascript" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        `;
+            break;
+        case "webpack":
+            var imgUrl = `
+            <div id="carouselWebpack" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselWebpack" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselWebpack" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./assets/images/webpack.png" class="d-block w-100" alt="Certificado en Webpack">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assets/images/npm.png" class="d-block w-100" alt="Certificado en NPM">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselWebpack" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselWebpack" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        `;
+            break;
+        case "SPA":
+            var imgUrl = `
+            <img
+            src="./assets/images/spa-javascript.png"
+            alt="Diploma de certificado"
+            class="img-fluid"
+            alt="Certificado en NPM"
+        />`;
+            break;
+        default:
+            var imgUrl = "No se encontró certificado para esta tecnología.";
+    }
+
+    // Update the modal's content.
+    var modalTitle = ventanaModal6.querySelector("#ventanaModal6Label");
+    var modalBody = ventanaModal6.querySelector(".modal-body");
+    if(tipoCert === "SPA"){
+        modalTitle.innerText = "Certificado SPA";
+    }else{
+        modalTitle.innerText = "Presiona las flechas laterales para ver más certificados";
+    }
+    
+    modalBody.innerHTML = imgUrl;
+});
 };

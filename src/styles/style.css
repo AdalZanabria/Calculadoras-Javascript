@@ -71,8 +71,51 @@ main {
     color: var(--gray);
 }
 
+.welcomeIcon {
+    font-size: 4rem;
+    color: var(--gray);
+}
+
 .si {
-    filter: invert(98%) sepia(2%) saturate(3183%) hue-rotate(186deg) brightness(100%) contrast(91%);
+    filter: invert(98%) sepia(2%) saturate(3183%) hue-rotate(186deg)
+        brightness(100%) contrast(91%);
+}
+
+#certificados a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.certIcons:hover {
+    animation: bounce infinite 1.5s ease-in-out;
+}
+@keyframes bounce {
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+hr {
+    opacity: 0.5;
+}
+
+hr:not([size]) {
+    height: 1.5px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        var(--gray),
+        transparent
+    );
+}
+
+hr:before {
+    /* background-image: linear-gradient(
+        to right,
+        transparent,
+        rgb(48, 49, 51),
+        transparent
+    ); */
 }
 
 footer a {

@@ -10,13 +10,7 @@ const Footer = () => {
                 <p
                     class="text-center text-md-start text-light fw-light m-0 small"
                 >
-                    Este sitio fue creado como parte de mi
-                    <a
-                        href="#!"
-                        data-bs-toggle="modal"
-                        data-bs-target="#ventanaModal5"
-                        >certificado en JavaScript.</a
-                    >
+                    adal.zanabria@gmail.com
                 </p>
             </div>
 
@@ -77,7 +71,8 @@ const Footer = () => {
                     >
                         <svg class="svg-inline--fa" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path fill="#eaebf3" d="M22.1987 18.498l-9.7699 5.5022v-4.2855l6.0872-3.3338 3.6826 2.117zm.6683-.6026V6.3884l-3.5752 2.0544v7.396zm-21.0657.6026l9.7699 5.5022v-4.2855L5.484 16.3809l-3.6826 2.117zm-.6683-.6026V6.3884l3.5751 2.0544v7.396zm.4183-12.2515l10.0199-5.644v4.1434L5.152 7.6586l-.0489.028zm20.8975 0l-10.02-5.644v4.1434l6.4192 3.5154.0489.028 3.5518-2.0427zm-10.8775 13.096l-6.0056-3.2873V8.9384l6.0054 3.4525v6.349zm.8575 0l6.0053-3.2873V8.9384l-6.0053 3.4525zM5.9724 8.1845l6.0287-3.3015L18.03 8.1845l-6.0288 3.4665z"/>
-                        </svg>                    </span>
+                        </svg>
+                    </span>
                     <span
                         data-bs-toggle="tooltip"
                         data-bs-placement="top"
@@ -102,44 +97,6 @@ const Footer = () => {
                 >
                     <i class="fab fa-github"></i>
                 </a>
-            </div>
-        </div>
-
-    <!--Modal 5-->
-        <div
-            class="modal fade"
-            id="ventanaModal5"
-            tabindex="-1"
-            aria-labelledby="ventanaModal5"
-            aria-hidden="true"
-        >
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                        ></button>
-                    </div>
-                    <div class="modal-body">
-                        <img
-                            src="./assets/images/diploma-javascript.jpg"
-                            alt="Diploma de certificado"
-                            class="img-fluid"
-                        />
-                    </div>
-                    <div class="modal-footer">
-                        <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-bs-dismiss="modal"
-                        >
-                            Volver
-                        </button>
-                    </div>
-                </div>
             </div>
         </div>
     `;
